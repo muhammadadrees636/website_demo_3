@@ -296,7 +296,7 @@ header {
     .second-nav .navigation {
         position: fixed;
         display: flex;
-        gap: 70px;
+        gap: 32px;
         top: 00px;
         right: 0;
         height: fit-content;

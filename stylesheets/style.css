@@ -406,15 +406,14 @@ main header #header_banner #header_banner_left button:hover {
 
 
 
-
 @media (max-width:1130px) {
     .second-nav .navigation {
         position: fixed;
         display: flex;
-        gap: 70px;
+        gap: 32px;
         top: 00px;
         right: 0;
-        height: fit-content;
+        height:fit-content;
         width: 100vw;
         flex-direction: column;
         background: #fff;

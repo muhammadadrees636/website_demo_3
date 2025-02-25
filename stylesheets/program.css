@@ -296,7 +296,7 @@ header {
     .second-nav .navigation {
         position: fixed;
         display: flex;
-        gap: 70px;
+        gap: 32px;
         top: 00px;
         right: 0;
         height: fit-content;
@@ -430,21 +430,7 @@ header {
     font-size: 14px;
     line-height: 1.6;
 }
-/* .quick-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.quick-links a {
-    text-decoration: none;
-    padding: 10px 15px;
-    background: orange;
-    border-radius: 5px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    display: inline-block;
-} */
+
 .contact p {
     font-size: 14px;
     margin-bottom: 5px;

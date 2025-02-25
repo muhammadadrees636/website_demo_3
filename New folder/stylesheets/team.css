@@ -285,7 +285,7 @@ header {
 
 
 
-@media (max-width:812px) {
+@media (max-width:1130px) {
     .second-nav .navigation {
         position: fixed;
         display: flex;
@@ -353,7 +353,6 @@ header {
 }
 #container-1 #innder p span {
 color: #2A5675;
-font-weight: bold;
 }
 
 
@@ -674,4 +673,27 @@ font-weight: bold;
     #go_to_top_btn{
         right: 20px;
     }
+}
+
+
+
+#zoom_box{
+    position: fixed;
+    bottom: 36px;
+    left: 159px;
+    background: #fff;
+    z-index: 9;
+    padding: 10px;
+}
+
+#zoom_box button {
+    background: transparent;
+    border: none;
+    outline: none;
+
+}
+#zoom_box button i{
+    color: #FE5D37;
+    font-size: 20px;
+    cursor: pointer;
 }

@@ -47,49 +47,36 @@ window.addEventListener('scroll', function () {
 // Images Show and Hidden Fuctionality
 
 document.addEventListener('DOMContentLoaded', function () {
-    const images = document.querySelectorAll('img');
     const removeBtn = document.querySelector("#remove_images_btn");
     const showBtn = document.querySelector("#Show_images_btn");
 
-    // Store original image sources in localStorage if not already stored
-    if (!localStorage.getItem('image_sources')) {
-        const imgSources = Array.from(images).map(img => img.src);
-        localStorage.setItem('image_sources', JSON.stringify(imgSources));
-    }
-
     function hideImages() {
-        images.forEach(img => {
-            img.src = ""
-            removeBtn.style.display = "none"
-            showBtn.style.display = "block"
-        }
-        );
-        // Hide all images
         localStorage.setItem('Image_remove', 'true'); // Save state
+        location.reload(); // Reload the page
     }
 
     function showImages() {
-        const storedSources = JSON.parse(localStorage.getItem('image_sources'));
-        if (storedSources) {
-            images.forEach((img, index) => img.src = img.alt); // Restore original sources
-            removeBtn.style.display = "block"
-            showBtn.style.display = "none"
-        }
         localStorage.setItem('Image_remove', 'false'); // Save state
+        location.reload(); // Reload the page
     }
 
     // Apply stored visibility state on page load
     if (localStorage.getItem('Image_remove') === 'true') {
-        hideImages();
+        document.querySelectorAll('img').forEach(img => img.src= "");
+        removeBtn.style.display = "none";
+        showBtn.style.display = "block";
+    } else {
+        document.querySelectorAll('img').forEach(img => {
+            let Image_sec=img.src
+            img.src = Image_sec
+        });
+        removeBtn.style.display = "block";
+        showBtn.style.display = "none";
     }
 
     removeBtn.addEventListener('click', hideImages);
     showBtn.addEventListener('click', showImages);
 });
-
-
-
-
 
 // Background_Color Part
 
@@ -492,6 +479,46 @@ const ProgramPage = () => {
 
 ProgramPage()
 
+var para_size = 16;
+var size = 30;
+
+document.querySelector('#zoom_in_btn').addEventListener('click', () => {
+    if (para_size < 25 && size < 40){
+        para_size += 0.5;
+        size += 0.5;
+        
+        
+    document.querySelectorAll('p').forEach(p => {
+        p.style.fontSize = para_size + "px";
+        p.style.lineHeight = '40px';
+
+    });
+    document.querySelectorAll('h1').forEach(h1 => {
+        h1.style.fontSize = size + "px";
+    });
+    document.querySelectorAll('h2').forEach(h2 => {
+        h2.style.fontSize = size + "px";
+    });
+} 
+});
+
+// ✅ Properly checking min size inside the event listener
+document.querySelector('#zoom_out_btn').addEventListener('click', () => {
+    if (para_size > 14 && size > 25) {  // Prevents going below min size
+        para_size -= 0.5;
+        size -= 0.5;
+
+        document.querySelectorAll('p').forEach(p => {
+            p.style.fontSize = para_size + "px";
+        });
+        document.querySelectorAll('h1').forEach(h1 => {
+            h1.style.fontSize = size + "px";
+        });
+        document.querySelectorAll('h2').forEach(h2 => {
+            h2.style.fontSize = size + "px";
+        });
+    }
+});
 
 let Input_text_form_keybord = () => {
     var key_board_button = document.querySelector(".key_board_button");

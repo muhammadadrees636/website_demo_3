@@ -11,6 +11,8 @@ head {
     width: 100%;
 }
 
+
+
 ::selection {
     background: #FE5D37;
     color: #fff;
@@ -404,7 +406,7 @@ main header #header_banner #header_banner_left button:hover {
 
 
 
-@media (max-width:921px) {
+@media (max-width:1130px) {
     .second-nav .navigation {
         position: fixed;
         display: flex;
@@ -417,7 +419,6 @@ main header #header_banner #header_banner_left button:hover {
         background: #fff;
         z-index: 999;
         padding: 100px 27px;
-        overflow: scroll;
 
     }
 
@@ -1034,18 +1035,26 @@ main #about #left #about_btn_div #about_btn:hover {
     }
 }
 
-#whatsapp_button {
+
+
+#zoom_box{
     position: fixed;
-    bottom: 38px;
-    left: 176px;
-    font-size: 29px;
-    background: #63b256;
-    padding: 4px 8px;
-    border-radius: 21px;
-
-
+    bottom: 36px;
+    left: 159px;
+    background: #fff;
+    z-index: 9;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-#whatsapp_button #whatapp_icon {
-    color: #fff;
+#zoom_box button {
+    background: transparent;
+    border: none;
+    outline: none;
+
+}
+#zoom_box button i{
+    color: #FE5D37;
+    font-size: 20px;
+    cursor: pointer;
 }

@@ -303,7 +303,7 @@ header {
 
 
 
-@media (max-width:812px) {
+@media (max-width:1130px) {
     .second-nav .navigation {
         position: fixed;
         display: flex;
@@ -818,4 +818,28 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+}
+
+
+#zoom_box{
+    position: fixed;
+    bottom: 36px;
+    left: 159px;
+    background: #fff;
+    z-index: 9;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#zoom_box button {
+    background: transparent;
+    border: none;
+    outline: none;
+
+}
+#zoom_box button i{
+    color: #FE5D37;
+    font-size: 20px;
+    cursor: pointer;
 }

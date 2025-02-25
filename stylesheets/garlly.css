@@ -245,7 +245,7 @@ header {
     height: 262px;
  }   
 }
-@media (max-width:500px) {
+@media (max-width:550px) {
     #header_banner h1 {
       
         font-size: 30px;

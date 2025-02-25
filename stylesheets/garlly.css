@@ -291,6 +291,7 @@ header {
 
 
 
+
 @media (max-width:1130px) {
     .second-nav .navigation {
         position: fixed;
@@ -298,12 +299,12 @@ header {
         gap: 70px;
         top: 00px;
         right: 0;
-        height: 84vh;
+        height: fit-content;
         width: 100vw;
         flex-direction: column;
         background: #fff;
         z-index: 999;
-        padding: 0 27px;
+        padding: 100px 27px;
 
     }
 

@@ -110,7 +110,7 @@ header {
     height: 200px;
     width: 153px;
     background: transparent;
-    top: 36px;
+    top: 200px;
     z-index: 9;
     right: 0px;
     justify-content: center;
@@ -207,7 +207,7 @@ header {
 .second-nav #cross_icon {
     position: absolute;
     top: 17px;
-    right: 17px;
+    right: 24px;
     font-size: 24px;
     display: none;
     cursor: pointer;
@@ -308,10 +308,10 @@ header {
     .second-nav .navigation {
         position: fixed;
         display: flex;
-        gap: 32px;
+        gap: 70px;
         top: 00px;
         right: 0;
-        height: fit-content;
+        height:fit-content;
         width: 100vw;
         flex-direction: column;
         background: #fff;

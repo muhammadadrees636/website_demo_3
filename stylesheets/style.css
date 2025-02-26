@@ -282,7 +282,7 @@ header {
 .second-nav #cross_icon {
     position: absolute;
     top: 17px;
-    right: 17px;
+    right: 24px;
     font-size: 32px;
     display: none;
     cursor: pointer;
@@ -410,7 +410,7 @@ main header #header_banner #header_banner_left button:hover {
     .second-nav .navigation {
         position: fixed;
         display: flex;
-        gap: 32px;
+        gap: 70px;
         top: 00px;
         right: 0;
         height:fit-content;
@@ -431,6 +431,8 @@ main header #header_banner #header_banner_left button:hover {
 
     .second-nav .navigation #sub_nav .background_colors_box {
         margin-bottom: 30px;
+        top: -200px;
+        background: #fff;
     }
 
     .second-nav .navigation a {

@@ -109,7 +109,7 @@ header {
     height: 200px;
     width: 153px;
     background: transparent;
-    top: 36px;
+    top: -200px;
     z-index: 9;
     right: 0px;
     justify-content: center;
@@ -176,7 +176,7 @@ header {
 .second-nav #cross_icon {
     position: absolute;
     top: 17px;
-    right: 17px;
+    right: 24px;
     font-size: 24px;
     display: none;
     cursor: pointer;

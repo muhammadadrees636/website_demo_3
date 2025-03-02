@@ -33,12 +33,14 @@ GoToTopFunction()
 window.addEventListener('scroll', function () {
 
     var nav = document.querySelector('.second-nav')
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 20) {
+        document.querySelector('.navigation ').style.top='65px'
         nav.classList.add('fixed')
 
     }
     else {
         nav.classList.remove('fixed')
+        document.querySelector('.navigation ').style.top='110px'
     }
 })
 
@@ -100,9 +102,11 @@ const HomePage = () => {
 
     const Backround_Color_One = () => {
         let HeaderFunction = () => {
+
+            document.querySelectorAll('nav .navigation ').forEach(navigator => { navigator.style.backgroundColor = "rgb(232 250 255)" })
             document.querySelectorAll('nav').forEach(nav => { nav.style.backgroundColor = "rgb(232 250 255)" })
             document.querySelector('#first-nav ').style.backgroundColor = '#42abcb'
-            document.querySelectorAll('nav .navigation a i').forEach(nav => { nav.style.color = "#42abcb" })
+            document.querySelectorAll('nav .navigation a ').forEach(a => { a.style.backgroundColor = "#42abcb" })
             document.querySelectorAll('nav .navigation #sub_nav li').forEach(li => {
                 li.style.borderColor = '#42abcb';
                 li.style.backgroundColor = '#fff'
@@ -180,7 +184,8 @@ const HomePage = () => {
         let HeaderFunction = () => {
             document.querySelectorAll('nav').forEach(nav => { nav.style.backgroundColor = "rgb(255 241 224)" })
             document.querySelector('#first-nav ').style.backgroundColor = '#ffab4b'
-            document.querySelectorAll('nav .navigation a i').forEach(nav => { nav.style.color = "#ffab4b" })
+            document.querySelectorAll('nav .navigation ').forEach(navigator => { navigator.style.backgroundColor = "rgb(255 241 224)" })
+            document.querySelectorAll('nav .navigation a ').forEach(a => { a.style.backgroundColor = "#ffab4b" })
             document.querySelectorAll('nav .navigation #sub_nav li').forEach(li => {
                 li.style.borderColor = '#ffab4b';
                 li.style.backgroundColor = '#fff'
@@ -259,8 +264,8 @@ const HomePage = () => {
         let HeaderFunction = () => {
             document.querySelectorAll('nav').forEach(nav => { nav.style.backgroundColor = "rgb(231 255 229)" })
             document.querySelector('#first-nav ').style.backgroundColor = '#63b256'
-            // document.querySelectorAll('#first-nav span a ').forEach(txt=>txt.style.color="#000")
-            document.querySelectorAll('nav .navigation a i').forEach(nav => { nav.style.color = "#63b256" })
+            document.querySelectorAll('nav .navigation ').forEach(navigator => { navigator.style.backgroundColor = "rgb(231 255 229)" })
+            document.querySelectorAll('nav .navigation a').forEach(a => { a.style.backgroundColor = "#63b256" })
             document.querySelectorAll('nav .navigation #sub_nav li').forEach(li => {
                 li.style.borderColor = '#63b256';
                 li.style.backgroundColor = '#fff'

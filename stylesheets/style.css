@@ -96,27 +96,37 @@ header {
     width: 100%;
 }
 
-#first-nav {
-    height: 39px;
-    background-color: #FE5D37;
+#bottom-nav {
+    height: 67px;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    background-color: transparent;
+    bottom: 0;
+    right: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+    justify-content: end;
+    align-items: end;
+
     color: #fff;
     font-size: 16px;
 }
 
 
-#first-nav span {
+#bottom-nav span {
     display: flex;
+    height: 60%;
+    width: 200px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     font-size: 14px;
+    background: #fe5c37;
+    border-top-left-radius: 22px;
+    padding: 5px;
 }
 
-#first-nav span:nth-child(2) a {
+#bottom-nav span a {
     color: #fff;
 }
 
@@ -165,7 +175,7 @@ header {
     .second-nav .navigation {
         position: fixed;
         display: flex;
-        top: 110px;
+        top: 58px;
         right: 0px;
         height: fit-content;
         width: 100vw;
@@ -529,25 +539,29 @@ main header #header_banner #header_banner_left button:hover {
 }
 
 /* All Responsive code of header */
+#zoom_box {
+    position: fixed;
+    bottom: 36px;
+    left: 159px;
+    background: #fff;
+    z-index: 9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 
 @media (max-width:597px) {
-    #first-nav {
-
-        flex-direction: column;
-        height: 50px;
-        padding: 5px;
-
+    #bottom-nav {
+        bottom: 0;
     }
-
+    #zoom_box{
+        left: 117px;
+    }
     main header #header_banner {
         background-position: -600px 0;
     }
 
-    #first-nav span {
-        width: 100%;
-        display: flex;
-        align-items: start;
-    }
+  
 }
 
 
@@ -1127,15 +1141,6 @@ main #about #left #about_btn_div #about_btn:hover {
 
 
 
-#zoom_box {
-    position: fixed;
-    bottom: 36px;
-    left: 159px;
-    background: #fff;
-    z-index: 9;
-    padding: 10px;
-    border-radius: 10px;
-}
 
 #zoom_box button {
     background: transparent;

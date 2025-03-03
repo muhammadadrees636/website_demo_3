@@ -523,36 +523,39 @@ header {
     }
 
 }
+
+
 @media (max-width:457px) {
     .key {
         margin-left: -3px;
         font-size: 5px;
-
+        
         
     }
     .keyboard{
         left:0px;
-    padding-left: 5px;
-    padding-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
-
+    
 }
 
 #zoom_box{
     position: fixed;
     bottom: 36px;
-    left: 159px;
+    left: 100px;
     background: #fff;
     z-index: 9;
     padding: 10px;
     border-radius: 10px;
 }
 
+
 #zoom_box button {
     background: transparent;
     border: none;
     outline: none;
-
+    
 }
 #zoom_box button i{
     color: #FE5D37;

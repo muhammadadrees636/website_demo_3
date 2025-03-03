@@ -40,7 +40,7 @@ window.addEventListener('scroll', function () {
     }
     else {
         nav.classList.remove('fixed')
-        document.querySelector('.navigation ').style.top='110px'
+        document.querySelector('.navigation ').style.top='58px'
     }
 })
 

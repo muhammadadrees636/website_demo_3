@@ -34,13 +34,13 @@ window.addEventListener('scroll', function () {
 
     var nav = document.querySelector('.second-nav')
     if (window.pageYOffset > 20) {
-        document.querySelector('.navigation ').style.top='65px'
+        document.querySelector('.navigation ').style.top = '65px'
         nav.classList.add('fixed')
 
     }
     else {
         nav.classList.remove('fixed')
-        document.querySelector('.navigation ').style.top='58px'
+        document.querySelector('.navigation ').style.top = '58px'
     }
 })
 
@@ -64,12 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Apply stored visibility state on page load
     if (localStorage.getItem('Image_remove') === 'true') {
-        document.querySelectorAll('img').forEach(img => img.src= "");
+        document.querySelectorAll('img').forEach(img => img.src = "");
         removeBtn.style.display = "none";
         showBtn.style.display = "block";
     } else {
         document.querySelectorAll('img').forEach(img => {
-            let Image_sec=img.src
+            let Image_sec = img.src
             img.src = Image_sec
         });
         removeBtn.style.display = "block";
@@ -102,16 +102,14 @@ const HomePage = () => {
 
     const Backround_Color_One = () => {
         let HeaderFunction = () => {
-
-            document.querySelectorAll('nav .navigation ').forEach(navigator => { navigator.style.backgroundColor = "rgb(232 250 255)" })
-            document.querySelectorAll('nav').forEach(nav => { nav.style.backgroundColor = "rgb(232 250 255)" })
-            document.querySelector('#first-nav ').style.backgroundColor = '#42abcb'
+            document.querySelector('nav .navigation ').style.backgroundColor = "rgb(232 250 255)"
+            document.querySelector('nav').style.backgroundColor = "rgb(232 250 255)"
             document.querySelectorAll('nav .navigation a ').forEach(a => { a.style.backgroundColor = "#42abcb" })
-            document.querySelectorAll('nav .navigation #sub_nav li').forEach(li => {
-                li.style.borderColor = '#42abcb';
-                li.style.backgroundColor = '#fff'
-                li.style.color = '#000'
-            })
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.backgroundColor = "#fff"
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.borderColor = "#42abcb"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.backgroundColor = "#fff"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#42abcb"
+
 
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
                 i.style.color = '#42abcb'
@@ -182,27 +180,26 @@ const HomePage = () => {
 
     const Backround_Color_Two = () => {
         let HeaderFunction = () => {
-            document.querySelectorAll('nav').forEach(nav => { nav.style.backgroundColor = "rgb(255 241 224)" })
-            document.querySelector('#first-nav ').style.backgroundColor = '#ffab4b'
-            document.querySelectorAll('nav .navigation ').forEach(navigator => { navigator.style.backgroundColor = "rgb(255 241 224)" })
+            document.querySelector('nav .navigation ').style.backgroundColor = "rgb(255, 241, 224)"
+            document.querySelector('nav').style.backgroundColor = "rgb(255, 241, 224)"
             document.querySelectorAll('nav .navigation a ').forEach(a => { a.style.backgroundColor = "#ffab4b" })
-            document.querySelectorAll('nav .navigation #sub_nav li').forEach(li => {
-                li.style.borderColor = '#ffab4b';
-                li.style.backgroundColor = '#fff'
-                li.style.color = '#000'
-            })
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.backgroundColor = "#fff"
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.borderColor = "#ffab4b"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.backgroundColor = "#fff"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#ffab4b"
+
 
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
                 i.style.color = '#ffab4b'
 
             })
-            document.querySelectorAll("main header #header_banner  h1").forEach(h1 => { h1.style.color = "#000" })
+            document.querySelectorAll("main header #header_banner h1").forEach(h1 => { h1.style.color = "000" })
             document.querySelectorAll('main header #header_banner button').forEach(btn => {
                 btn.style.color = '#000'
                 btn.style.backgroundColor = '#fff'
-                btn.style.color = '#000'
                 btn.style.borderColor = '#ffab4b'
             })
+
 
         }
         let AboutSection = () => {
@@ -262,24 +259,23 @@ const HomePage = () => {
 
     const Backround_Color_Three = () => {
         let HeaderFunction = () => {
-            document.querySelectorAll('nav').forEach(nav => { nav.style.backgroundColor = "rgb(231 255 229)" })
-            document.querySelector('#first-nav ').style.backgroundColor = '#63b256'
-            document.querySelectorAll('nav .navigation ').forEach(navigator => { navigator.style.backgroundColor = "rgb(231 255 229)" })
-            document.querySelectorAll('nav .navigation a').forEach(a => { a.style.backgroundColor = "#63b256" })
-            document.querySelectorAll('nav .navigation #sub_nav li').forEach(li => {
-                li.style.borderColor = '#63b256';
-                li.style.backgroundColor = '#fff'
-                li.style.color = '#000'
-            })
+            document.querySelector('nav .navigation ').style.backgroundColor = "rgb(231, 255, 229)"
+            document.querySelector('nav').style.backgroundColor = "rgb(231, 255, 229)"
+            document.querySelectorAll('nav .navigation a ').forEach(a => { a.style.backgroundColor = "#63b256" })
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.backgroundColor = "#fff"
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.borderColor = "#63b256"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.backgroundColor = "#fff"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#63b256"
+
 
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
                 i.style.color = '#63b256'
 
             })
-            document.querySelectorAll("main header #header_banner  h1").forEach(h1 => { h1.style.color = "#000" })
+            document.querySelectorAll("main header #header_banner h1").forEach(h1 => { h1.style.color = "000" })
             document.querySelectorAll('main header #header_banner button').forEach(btn => {
-
                 btn.style.color = '#000'
+                btn.style.backgroundColor = '#fff'
                 btn.style.borderColor = '#63b256'
             })
 
@@ -484,47 +480,51 @@ const ProgramPage = () => {
 
 ProgramPage()
 
-var para_size = 16;
-var size = 30;
+const ZoomFun = () => {
+    var para_size = 16;
+    var size = 30;
 
-document.querySelector('#zoom_in_btn').addEventListener('click', () => {
-    if (para_size < 25 && size < 40){
-        para_size += 0.5;
-        size += 0.5;
-        
-        
-    document.querySelectorAll('p').forEach(p => {
-        p.style.fontSize = para_size + "px";
-        p.style.lineHeight = '40px';
+    document.querySelector('#zoom_in_btn').addEventListener('click', () => {
+        if (para_size < 25 && size < 40) {
+            para_size += 0.5;
+            size += 0.5;
 
+
+            document.querySelectorAll('p').forEach(p => {
+                p.style.fontSize = para_size + "px";
+                p.style.lineHeight = '40px';
+
+            });
+            document.querySelectorAll('h1').forEach(h1 => {
+                h1.style.fontSize = size + "px";
+            });
+            document.querySelectorAll('h2').forEach(h2 => {
+                h2.style.fontSize = size + "px";
+            });
+        }
     });
-    document.querySelectorAll('h1').forEach(h1 => {
-        h1.style.fontSize = size + "px";
+
+    // ✅ Properly checking min size inside the event listener
+
+
+    document.querySelector('#zoom_out_btn').addEventListener('click', () => {
+        if (para_size > 14 && size > 25) {
+            para_size -= 0.5;
+            size -= 0.5;
+
+            document.querySelectorAll('p').forEach(p => {
+                p.style.fontSize = para_size + "px";
+            });
+            document.querySelectorAll('h1').forEach(h1 => {
+                h1.style.fontSize = size + "px";
+            });
+            document.querySelectorAll('h2').forEach(h2 => {
+                h2.style.fontSize = size + "px";
+            });
+        }
     });
-    document.querySelectorAll('h2').forEach(h2 => {
-        h2.style.fontSize = size + "px";
-    });
-} 
-});
-
-// ✅ Properly checking min size inside the event listener
-document.querySelector('#zoom_out_btn').addEventListener('click', () => {
-    if (para_size > 14 && size > 25) {  // Prevents going below min size
-        para_size -= 0.5;
-        size -= 0.5;
-
-        document.querySelectorAll('p').forEach(p => {
-            p.style.fontSize = para_size + "px";
-        });
-        document.querySelectorAll('h1').forEach(h1 => {
-            h1.style.fontSize = size + "px";
-        });
-        document.querySelectorAll('h2').forEach(h2 => {
-            h2.style.fontSize = size + "px";
-        });
-    }
-});
-
+}
+ZoomFun()
 let Input_text_form_keybord = () => {
     var key_board_button = document.querySelector(".key_board_button");
     var buttons = document.querySelectorAll(".keyboard button");

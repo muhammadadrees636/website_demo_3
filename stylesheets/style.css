@@ -98,7 +98,7 @@ header {
 
 #bottom-nav {
     height: 67px;
-    width: 100%;
+    width: 70%;
     position: fixed;
     z-index: 999999;
     background-color: transparent;

@@ -50,7 +50,7 @@ header {
 }
 #header_banner h1 {
     color: #fff;
-    font-size: 55px;
+    font-size: 55px!important;
     z-index: 2;
 }
 

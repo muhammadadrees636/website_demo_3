@@ -16,6 +16,28 @@ let ResponsiveNavBar = () => {
 ResponsiveNavBar()
 
 
+function ImageRotationFunction(){
+    var loder = document.querySelector("#loder #box");
+    var rotatevla = 1;
+    const imgRotateFun = () => {
+        loder.style.transform = `rotate(${rotatevla + 0}deg)`; // Corrected: Added 'deg' to the rotate value
+        loder.style.transition = `.3s `;
+        rotatevla+=20;
+    }
+    setInterval(function () {
+        imgRotateFun()
+    }, 100);
+   
+}
+setTimeout(() => {
+    var loder = document.querySelector("#loder");
+    loder.style.display="none"
+
+}, 2000);
+
+document.addEventListener('DOMContentLoaded',function(){
+    ImageRotationFunction()
+})
 let GoToTopFunction = () => {
     var Button = document.querySelector('#topbtn')
     Button.addEventListener('click', () => {
@@ -107,9 +129,11 @@ const HomePage = () => {
             document.querySelectorAll('nav .navigation a ').forEach(a => { a.style.backgroundColor = "#42abcb" })
             document.querySelector('.second-nav .navigation #sub_nav #background_color').style.backgroundColor = "#fff"
             document.querySelector('.second-nav .navigation #sub_nav #background_color').style.borderColor = "#42abcb"
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.color = "#42abcb"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.backgroundColor = "#fff"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#42abcb"
-
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.color = "#42abcb"
+            document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#42abcb"
 
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
                 i.style.color = '#42abcb'
@@ -185,8 +209,12 @@ const HomePage = () => {
             document.querySelectorAll('nav .navigation a ').forEach(a => { a.style.backgroundColor = "#ffab4b" })
             document.querySelector('.second-nav .navigation #sub_nav #background_color').style.backgroundColor = "#fff"
             document.querySelector('.second-nav .navigation #sub_nav #background_color').style.borderColor = "#ffab4b"
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.color = "#ffab4b"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.backgroundColor = "#fff"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#ffab4b"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.color = "#ffab4b"
+            document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#ffab4b"
+
 
 
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
@@ -264,8 +292,12 @@ const HomePage = () => {
             document.querySelectorAll('nav .navigation a ').forEach(a => { a.style.backgroundColor = "#63b256" })
             document.querySelector('.second-nav .navigation #sub_nav #background_color').style.backgroundColor = "#fff"
             document.querySelector('.second-nav .navigation #sub_nav #background_color').style.borderColor = "#63b256"
+            document.querySelector('.second-nav .navigation #sub_nav #background_color').style.color = "#63b256"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.backgroundColor = "#fff"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#63b256"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.color= "#63b256"
+            document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#63b256"
+
 
 
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {

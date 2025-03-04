@@ -55,11 +55,7 @@ header {
     text-align: center;
 }
 
-@media (max-width:700px) {
- #header_banner{
-    height: 262px;
- }   
-}
+
 @media (max-width:877px) {
     #header_banner h1 {
         font-size: 40px;
@@ -71,17 +67,6 @@ header {
     }
 }
 
-@media (max-width:461px) {
-    #header_banner{
-       height: 200px;
-    }   
-   }
-   
-@media (max-width:349px) {
-    #header_banner{
-       height: 150px;
-    }   
-   }
 
 
 

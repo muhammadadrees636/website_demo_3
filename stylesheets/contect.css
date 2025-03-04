@@ -40,7 +40,7 @@ header {
 
 #header_banner img {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 100%;
     object-fit: cover;
     position: absolute;
@@ -54,23 +54,10 @@ header {
     z-index: 2;
 }
 
-@media (max-width:700px) {
- #header_banner{
-    height: 262px;
- }   
-}
 
-@media (max-width:461px) {
-    #header_banner{
-       height: 200px;
-    }   
-   }
-   
-@media (max-width:349px) {
-    #header_banner{
-       height: 150px;
-    }   
-   }
+
+
+
 /* All Responsive code of header */
 
 
@@ -180,7 +167,7 @@ header {
     }
     #header_banner h1 {
         
-        font-size: 30px;
+        font-size: 60px;
     
     }
 }

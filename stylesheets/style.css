@@ -97,8 +97,7 @@ header {
 }
 
 #bottom-nav {
-    height: 67px;
-    width: 70%;
+    height: 51px;
     position: fixed;
     z-index: 999999;
     background-color: transparent;
@@ -161,17 +160,20 @@ header {
     width: 100%;
     height: 100%;
 }
+
 /* navigation */
 
 /* for mobile and other short devices */
 
 @media (max-width:685px) {
-    .second-nav #logo{
+    .second-nav #logo {
         width: 80px;
     }
+
     .second-nav {
         height: 70px;
     }
+
     .second-nav .navigation {
         position: fixed;
         display: flex;
@@ -193,7 +195,7 @@ header {
     .second-nav .navigation a {
         text-decoration: none;
         color: #fff;
-        padding: 5px 10px ;
+        padding: 5px 10px;
         border-radius: 4px;
         background: #fe5c37;
         position: relative;
@@ -210,8 +212,8 @@ header {
         padding-left: 5px;
         position: absolute;
         top: -50px;
-        right: 23px; 
-       }
+        right: 23px;
+    }
 
     .second-nav .navigation #sub_nav .background_colors_box {
         margin-bottom: 30px;
@@ -320,7 +322,7 @@ header {
         color: #FE5D37;
     }
 
-   
+
 
 }
 
@@ -360,7 +362,7 @@ header {
         position: absolute;
         height: 200px;
         width: 153px;
-        top:59px;
+        top: 59px;
         z-index: 9;
         right: 0px;
         justify-content: center;
@@ -407,7 +409,7 @@ header {
     .second-nav .navigation a {
         text-decoration: none;
         color: #fff;
-        padding: 5px 10px ;
+        padding: 5px 10px;
         border-radius: 4px;
         background: #fe5c37;
         position: relative;
@@ -447,7 +449,7 @@ header {
         color: #000;
     }
 
- 
+
 
     .second-nav #cross_icon {
         position: absolute;
@@ -469,6 +471,7 @@ header {
     .second-nav .navigation {
         gap: 10px;
     }
+
     .second-nav .navigation a {
         font-size: 15px;
     }
@@ -554,14 +557,16 @@ main header #header_banner #header_banner_left button:hover {
     #bottom-nav {
         bottom: 0;
     }
-    #zoom_box{
+
+    #zoom_box {
         left: 117px;
     }
+
     main header #header_banner {
         background-position: -600px 0;
     }
 
-  
+
 }
 
 
@@ -604,7 +609,7 @@ main #about #right #image1 {
     width: 300px;
     border: 15px solid #FE5D37;
     border-radius: 50%;
-   
+
     overflow: hidden;
     top: 0;
 }
@@ -614,6 +619,7 @@ main #about #right img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    transition: .3s;
 }
 
 main #about #right #image2 {
@@ -646,6 +652,9 @@ main #about #right #image3 {
     overflow: hidden;
 }
 
+main #about #right img:hover{
+    transform: scale(1.1);
+}
 main #about #left {
     width: 56%;
     height: 100%;
@@ -732,27 +741,24 @@ main #about #left #about_btn_div #about_btn:hover {
 }
 
 #program_container #program_1 {
-    height: 300px;
-    width: 300px;
+    height: 260px;
+    width: 400px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     transition: .2s;
     cursor: pointer;
-
 }
 
 #program_container #program_1 #eroll_btn {
-    padding: 14px 4px;
-    color: #fff;
-    background: #fff;
+    padding: 14px 14px;
     color: #000;
-    border: 2px solid #fe5c37;
+    background: #fff;
+    border: 1px solid #FE5D37;
     outline: none;
     z-index: 9;
     width: 35%;
     display: flex;
-    text-decoration: none;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -761,30 +767,33 @@ main #about #left #about_btn_div #about_btn:hover {
     border-radius: 25px;
     transition: .2s;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #program_container #program_1:hover #eroll_btn {
-    left: 100px;
+    left: 127px;
 }
 
 #program_container #program_1 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-position: center;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-
+    transition: .3s;
 }
-
+#program_container #program_1:hover{
+    transform: scale(1.1);
+}
 #program_container #program_1 span {
     position: absolute;
     width: 100%;
     height: 100%;
     background: #fe5c37;
-    bottom: -250px;
+    bottom: -213px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -793,6 +802,7 @@ main #about #left #about_btn_div #about_btn:hover {
     font-size: 17px;
     list-style: none;
     transition: .4s;
+
 }
 
 
@@ -1153,4 +1163,29 @@ main #about #left #about_btn_div #about_btn:hover {
     color: #FE5D37;
     font-size: 20px;
     cursor: pointer;
+}
+
+
+#loder{
+    height: 100%;
+    width: 100%;
+    background:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loder #box{
+    height: 150px;
+    width:150px;
+    background: transparent;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #fe5c37;
+    border-bottom-color: #fe5c37;
+    border-right-color: #fe5c37;
 }

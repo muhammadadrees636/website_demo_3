@@ -29,6 +29,7 @@ header {
     align-items: center;
     overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 #header_banner span {
     width: 100%;
@@ -41,7 +42,7 @@ header {
 
 #header_banner img {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 100%;
     object-fit: cover;
     position: absolute;

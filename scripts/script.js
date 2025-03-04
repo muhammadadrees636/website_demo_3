@@ -134,7 +134,7 @@ const HomePage = () => {
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#42abcb"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.color = "#42abcb"
             document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#42abcb"
-
+            // Team page code
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
                 i.style.color = '#42abcb'
 
@@ -399,7 +399,7 @@ const AboutPage = () => {
             document.querySelectorAll('#container-1 #left h2 ').forEach(h2 => { h2.style.color = "#000" })
             document.querySelectorAll('#container-1 #left p ').forEach(p => { p.style.color = "#000" })
             document.querySelectorAll('#container-1 #left p span ').forEach(p => { p.style.color = "#42abcb" })
-            document.querySelector('#container-1 #main_text ').style.color = "#000"
+            document.querySelector('#container-1 #main_text ').style.color = "#42abcb"
         }
         let Footer = () => {
             document.querySelector('.footer').style.backgroundColor = '#42abcb'
@@ -423,7 +423,7 @@ const AboutPage = () => {
             document.querySelectorAll('#container-1 #left h2 ').forEach(h2 => { h2.style.color = "#000" })
             document.querySelectorAll('#container-1 #left p ').forEach(p => { p.style.color = "#000" })
             document.querySelectorAll('#container-1 #left p span ').forEach(p => { p.style.color = "#63b256" })
-            document.querySelector('#container-1 #main_text ').style.color = "#000"
+            document.querySelector('#container-1 #main_text ').style.color = "#63b256"
         }
         let Footer = () => {
             document.querySelector('.footer').style.backgroundColor = '#63b256'
@@ -443,7 +443,7 @@ const AboutPage = () => {
             document.querySelectorAll('#container-1 #left h2 ').forEach(h2 => { h2.style.color = "#000" })
             document.querySelectorAll('#container-1 #left p ').forEach(p => { p.style.color = "#000" })
             document.querySelectorAll('#container-1 #left p span ').forEach(p => { p.style.color = "#ffab4b" })
-            document.querySelector('#container-1 #main_text ').style.color = "#000"
+            document.querySelector('#container-1 #main_text ').style.color = "#ffab4b"
         }
         let Footer = () => {
             document.querySelector('.footer').style.backgroundColor = '#ffab4b'
@@ -512,6 +512,49 @@ const ProgramPage = () => {
 
 ProgramPage()
 
+const TeamPage=()=>{
+    let TeamColor_1=()=>{
+        document.querySelector('#container-1 #image').style.borderColor='#42abcb' 
+        document.querySelector('#container-2 h1').style.color='#42abcb'
+        document.querySelector('#container-1 #innder h1').style.color='#42abcb'
+    }
+    let TeamColor_2=()=>{
+        document.querySelector('#container-1 #image').style.borderColor='#63b256'
+        document.querySelector('#container-2 h1').style.color='#63b256'
+        document.querySelector('#container-1 #innder h1').style.color='#63b256'
+    }
+    
+    let TeamColor_3=()=>{
+        document.querySelector('#container-1 #image').style.borderColor='#ffab4b'
+        document.querySelector('#container-2 h1').style.color='#ffab4b'
+        document.querySelector('#container-1 #innder h1').style.color='#ffab4b'
+    }
+
+
+    document.querySelector("#button-1").addEventListener("click", TeamColor_1)
+    document.querySelector("#button-2").addEventListener("click", TeamColor_2)
+    document.querySelector("#button-3").addEventListener("click", TeamColor_3)
+}
+TeamPage()
+
+const ContactPage=()=>{
+    let ContactColor_1=()=>{
+        document.querySelector('#constainer h1').style.color='#42abcb'
+    }
+    let ContactColor_2=()=>{
+        document.querySelector('#constainer h1').style.color='#63b256'
+    }
+    
+    let ContactColor_3=()=>{
+        document.querySelector('#constainer h1').style.color='#ffab4b'
+    }
+
+
+    document.querySelector("#button-1").addEventListener("click", ContactColor_1)
+    document.querySelector("#button-2").addEventListener("click", ContactColor_2)
+    document.querySelector("#button-3").addEventListener("click", ContactColor_3)
+}
+ContactPage()
 const ZoomFun = () => {
     var para_size = 16;
     var size = 30;

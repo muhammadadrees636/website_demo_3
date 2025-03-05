@@ -16,26 +16,26 @@ let ResponsiveNavBar = () => {
 ResponsiveNavBar()
 
 
-function ImageRotationFunction(){
+function ImageRotationFunction() {
     var loder = document.querySelector("#loder #box");
     var rotatevla = 1;
     const imgRotateFun = () => {
         loder.style.transform = `rotate(${rotatevla + 0}deg)`; // Corrected: Added 'deg' to the rotate value
         loder.style.transition = `.3s `;
-        rotatevla+=20;
+        rotatevla += 20;
     }
     setInterval(function () {
         imgRotateFun()
     }, 100);
-   
+
 }
+
 setTimeout(() => {
     var loder = document.querySelector("#loder");
-    loder.style.display="none"
-
+    loder.style.display = "none"
 }, 2000);
 
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded', function () {
     ImageRotationFunction()
 })
 let GoToTopFunction = () => {
@@ -134,7 +134,9 @@ const HomePage = () => {
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#42abcb"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.color = "#42abcb"
             document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#42abcb"
+
             // Team page code
+
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
                 i.style.color = '#42abcb'
 
@@ -295,7 +297,7 @@ const HomePage = () => {
             document.querySelector('.second-nav .navigation #sub_nav #background_color').style.color = "#63b256"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.backgroundColor = "#fff"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#63b256"
-            document.querySelector('.second-nav .navigation #remove_images_btn ').style.color= "#63b256"
+            document.querySelector('.second-nav .navigation #remove_images_btn ').style.color = "#63b256"
             document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#63b256"
 
 
@@ -512,22 +514,28 @@ const ProgramPage = () => {
 
 ProgramPage()
 
-const TeamPage=()=>{
-    let TeamColor_1=()=>{
-        document.querySelector('#container-1 #image').style.borderColor='#42abcb' 
-        document.querySelector('#container-2 h1').style.color='#42abcb'
-        document.querySelector('#container-1 #innder h1').style.color='#42abcb'
+const TeamPage = () => {
+    let TeamColor_1 = () => {
+        document.querySelector('#container-1 #image').style.borderColor = '#42abcb'
+        document.querySelector('#container-2 h1').style.color = '#42abcb'
+        document.querySelector('#container-1 #innder h1').style.color = '#42abcb'
+        document.querySelector('#container-2 #inner img').style.borderColor = "#42abcb"
+
     }
-    let TeamColor_2=()=>{
-        document.querySelector('#container-1 #image').style.borderColor='#63b256'
-        document.querySelector('#container-2 h1').style.color='#63b256'
-        document.querySelector('#container-1 #innder h1').style.color='#63b256'
+    let TeamColor_2 = () => {
+        document.querySelector('#container-1 #image').style.borderColor = '#63b256'
+        document.querySelector('#container-2 h1').style.color = '#63b256'
+        document.querySelector('#container-1 #innder h1').style.color = '#63b256'
+        document.querySelector('#container-2 #inner img').style.borderColor = "#63b256"
+
     }
-    
-    let TeamColor_3=()=>{
-        document.querySelector('#container-1 #image').style.borderColor='#ffab4b'
-        document.querySelector('#container-2 h1').style.color='#ffab4b'
-        document.querySelector('#container-1 #innder h1').style.color='#ffab4b'
+
+    let TeamColor_3 = () => {
+        document.querySelector('#container-1 #image').style.borderColor = '#ffab4b'
+        document.querySelector('#container-2 h1').style.color = '#ffab4b'
+        document.querySelector('#container-1 #innder h1').style.color = '#ffab4b'
+        document.querySelector('#container-2 #inner img').style.borderColor = "#ffab4b"
+
     }
 
 
@@ -537,16 +545,16 @@ const TeamPage=()=>{
 }
 TeamPage()
 
-const ContactPage=()=>{
-    let ContactColor_1=()=>{
-        document.querySelector('#constainer h1').style.color='#42abcb'
+const ContactPage = () => {
+    let ContactColor_1 = () => {
+        document.querySelector('#constainer h1').style.color = '#42abcb'
     }
-    let ContactColor_2=()=>{
-        document.querySelector('#constainer h1').style.color='#63b256'
+    let ContactColor_2 = () => {
+        document.querySelector('#constainer h1').style.color = '#63b256'
     }
-    
-    let ContactColor_3=()=>{
-        document.querySelector('#constainer h1').style.color='#ffab4b'
+
+    let ContactColor_3 = () => {
+        document.querySelector('#constainer h1').style.color = '#ffab4b'
     }
 
 

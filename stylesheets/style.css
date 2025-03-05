@@ -247,7 +247,6 @@ header {
     .second-nav .navigation #sub_nav .background_colors_box {
         position: absolute;
         height: 200px;
-        width: 153px;
         background: transparent;
         top: 36px;
         z-index: 9;

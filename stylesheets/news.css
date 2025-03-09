@@ -43,7 +43,7 @@ header {
 
 #header_banner img {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 100%;
     object-fit: cover;
     position: absolute;
@@ -229,7 +229,7 @@ header {
 #zoom_box{
     position: fixed;
     bottom: 36px;
-    left: 20px!important;
+    left: 150px!important;
     background: #fff;
     z-index: 9;
     padding: 10px;

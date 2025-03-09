@@ -1121,8 +1121,8 @@ main #about #left #about_btn_div #about_btn:hover {
 
 #Choos_us_container #inner_container p {
     line-height: 38px;
-    padding-left: 28px;
     text-align: justify;
+    word-spacing: 2px;
     color: #757575;
 }
 
@@ -1144,9 +1144,9 @@ main #about #left #about_btn_div #about_btn:hover {
     }
 }
 
-@media (max-width:386px) {
+@media (max-width:640px) {
     #Choos_us_container {
-        padding: 5px;
+        padding: 9px;
 
     }
 

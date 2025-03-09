@@ -626,31 +626,38 @@ const ZoomFun = () => {
 ZoomFun()
 const News_Image_Display = () => {
     document.querySelector("#container_1").addEventListener("click", function (e) {
-        var image_slider =document.querySelectorAll('.swiper-slide img')
+        var image_slider = document.querySelectorAll('.swiper-slide img');
+
         if (e.target.tagName === "IMG") { // Ensure target is an image
             const imgSrc = e.target.src;
-            image_slider.forEach(slide=>{
+            const displayBox = document.querySelector(".display_box");
 
-                if (imgSrc.endsWith("news_page_1.jpg")) {
-                    image_slider[0].src = "http://127.0.0.1:5500/image/news_page_1.jpg";
-                    image_slider[1].src = "http://127.0.0.1:5500/image/news_page_2.jpg";
-                    document.querySelector(".display_box").classList.remove("news_image_display_hidden");
-                } else if (imgSrc.endsWith("news_page_2.jpg")) {
-                   image_slider[0].src = "http://127.0.0.1:5500/image/news_page_2.jpg";
-                   image_slider[1].src = "http://127.0.0.1:5500/image/news_page_1.jpg";
-                    document.querySelector(".display_box").classList.remove("news_image_display_hidden");
-                }
-            })
+            if (imgSrc.includes("news_page_1.jpg")) {
+                image_slider[0].src = "./image/news_page_1.jpg";
+                image_slider[1].src = "./image/news_page_2.jpg";
+            } else if (imgSrc.includes("news_page_2.jpg")) {
+                image_slider[0].src = "./image/news_page_2.jpg";
+                image_slider[1].src = "./image/news_page_1.jpg";
             }
+
+            // Show slider
+            displayBox.classList.remove("news_image_display_hidden");
+
+            // Reinitialize Swiper to update images
+            setTimeout(() => {
+                swiper.update();
+            }, 10);
+        }
     });
 
+    // Close button functionality
     document.querySelector(".slider_remove_btn").addEventListener("click", function () {
-        document.querySelector(".display_box ").classList.add("news_image_display_hidden");
+        document.querySelector(".display_box").classList.add("news_image_display_hidden");
     });
 };
 
+// Ensure the script runs after the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", News_Image_Display);
-
 
 
 let Input_text_form_keybord = () => {

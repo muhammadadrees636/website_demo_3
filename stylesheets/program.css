@@ -133,7 +133,7 @@ header {
 
 #container-1 #program_1 img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-position: center;
     object-fit: cover;
     position: absolute;

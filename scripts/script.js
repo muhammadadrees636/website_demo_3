@@ -25,7 +25,7 @@ document.querySelectorAll('h1').forEach(h1 => {
 });
 
 
-const ImageRotationFunction  =()=> {
+const ImageRotationFunction = () => {
     var loder = document.querySelector("#loder #box");
     var rotatevla = 1;
     const imgRotateFun = () => {
@@ -202,12 +202,13 @@ const HomePage = () => {
             document.querySelectorAll('.footer .footer-column h2').forEach(h2 => { h2.style.color = '#fff' })
             document.querySelectorAll('.footer .footer-column p').forEach(p => { p.style.color = '#fff' })
         }
-        document.querySelector('#en_roll_btn a ').style.borderColor = "#42abcb"
-        document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
-        document.querySelector('#en_roll_btn a ').style.color = "#000"
-        document.querySelector('#go_to_top_btn button').style.borderColor = '#42abcb'
-        document.querySelector('#go_to_top_btn button').style.backgroundColor = "#fff"
-        document.querySelector('#go_to_top_btn button').style.color = "#000"
+        document.querySelector(' #slider_section h1 ').style.color = "#42abcb"
+        // document.querySelector('#en_roll_btn a ').style.borderColor = "#42abcb"
+        // document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
+        // document.querySelector('#en_roll_btn a ').style.color = "#000"
+        // document.querySelector('#go_to_top_btn button').style.borderColor = '#42abcb'
+        // document.querySelector('#go_to_top_btn button').style.backgroundColor = "#fff"
+        // document.querySelector('#go_to_top_btn button').style.color = "#000"
         HeaderFunction()
         AboutSection()
         ProgramSection()
@@ -229,7 +230,7 @@ const HomePage = () => {
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#ffab4b"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.color = "#ffab4b"
             document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#ffab4b"
-            
+
 
 
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
@@ -279,24 +280,20 @@ const HomePage = () => {
             document.querySelector(' #Choos_us_container ').style.backgroundColor = "rgb(255 241 224)"
             document.querySelector(' #Choos_us_container h1').style.color = "#000"
         }
-        let Slider_Section=()=>{
-            document.querySelectorAll('.swiper.swiper-slide').forEach(border=>{border.style.borderColor = "#42abcb"})
-            document.querySelector('.swiper-slide h2 ').forEach(h2 => {
-                h2.style.color ="red"
-            });
-        }
+
         let FooterSection = () => {
             document.querySelector('.footer').style.backgroundColor = 'rgb(255 241 224)'
             document.querySelector('.footer').style.backgroundColor = 'rgb(255 241 224)'
             document.querySelectorAll('.footer .footer-column h2').forEach(h2 => { h2.style.color = '#000' })
             document.querySelectorAll('.footer .footer-column p').forEach(p => { p.style.color = '#000' })
         }
-        document.querySelector('#en_roll_btn a ').style.borderColor = "#ffab4b"
-        document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
-        document.querySelector('#en_roll_btn a ').style.color = "#000"
-        document.querySelector('#go_to_top_btn button').style.borderColor = "#ffab4b"
-        document.querySelector('#go_to_top_btn button').style.backgroundColor = "#fff"
-        document.querySelector('#go_to_top_btn button').style.color = "#000"
+        document.querySelector(' #slider_section h1 ').style.color = "#ffab4b"
+        // document.querySelector('#en_roll_btn a ').style.borderColor = "#ffab4b"
+        // document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
+        // document.querySelector('#en_roll_btn a ').style.color = "#000"
+        // document.querySelector('#go_to_top_btn button').style.borderColor = "#ffab4b"
+        // document.querySelector('#go_to_top_btn button').style.backgroundColor = "#fff"
+        // document.querySelector('#go_to_top_btn button').style.color = "#000"
 
         HeaderFunction()
         AboutSection()
@@ -372,12 +369,14 @@ const HomePage = () => {
             document.querySelectorAll('.footer .footer-column h2').forEach(h2 => { h2.style.color = '#000' })
             document.querySelectorAll('.footer .footer-column p').forEach(p => { p.style.color = '#000' })
         }
-        document.querySelector('#en_roll_btn a ').style.borderColor = "#63b256"
-        document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
-        document.querySelector('#en_roll_btn a ').style.color = "#000"
-        document.querySelector('#go_to_top_btn button ').style.borderColor = "#63b256"
-        document.querySelector('#go_to_top_btn button  ').style.backgroundColor = "#fff"
-        document.querySelector('#go_to_top_btn button ').style.color = "#000"
+        document.querySelector(' #slider_section h1 ').style.color = "#63b256"
+        // document.querySelector('#en_roll_btn a ').style.borderColor = "#63b256"
+        // document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
+        // document.querySelector('#en_roll_btn a ').style.color = "#000"
+        // document.querySelector('#go_to_top_btn button ').style.borderColor = "#63b256"
+        // document.querySelector('#go_to_top_btn button  ').style.backgroundColor = "#fff"
+        // document.querySelector('#go_to_top_btn button ').style.color = "#000"
+
         HeaderFunction()
         AboutSection()
         ProgramSection()
@@ -471,7 +470,6 @@ const AboutPage = () => {
             document.querySelector('.footer').style.backgroundColor = '#ffab4b'
             document.querySelectorAll('.footer .footer-column h2').forEach(h2 => { h2.style.color = '#000' })
         }
-
         Constainer_1()
         Footer()
     }
@@ -540,6 +538,7 @@ const TeamPage = () => {
         document.querySelector('#container-2 h1').style.color = '#42abcb'
         document.querySelector('#container-1 #innder h1').style.color = '#42abcb'
         document.querySelector('#container-2 #inner img').style.borderColor = "#42abcb"
+        document.querySelectorAll('#container-1 #innder p span').forEach(span => { span.style.color = "#42abcb" })
 
     }
     let TeamColor_2 = () => {
@@ -547,6 +546,8 @@ const TeamPage = () => {
         document.querySelector('#container-2 h1').style.color = '#63b256'
         document.querySelector('#container-1 #innder h1').style.color = '#63b256'
         document.querySelector('#container-2 #inner img').style.borderColor = "#63b256"
+        document.querySelectorAll('#container-1 #innder p span').forEach(span => { span.style.color = "#63b256" })
+
 
     }
 
@@ -555,6 +556,8 @@ const TeamPage = () => {
         document.querySelector('#container-2 h1').style.color = '#ffab4b'
         document.querySelector('#container-1 #innder h1').style.color = '#ffab4b'
         document.querySelector('#container-2 #inner img').style.borderColor = "#ffab4b"
+        document.querySelectorAll('#container-1 #innder p span').forEach(span => { span.style.color = "#ffab4b" })
+
 
     }
 
@@ -568,13 +571,21 @@ TeamPage()
 const ContactPage = () => {
     let ContactColor_1 = () => {
         document.querySelector('#constainer h1').style.color = '#42abcb'
+        document.querySelectorAll('#container-1 #contect_form div input').forEach(border => { border.style.borderColor = '#42abcb' })
+        document.querySelector('#container-1 #contect_form div textarea').style.borderColor = '#42abcb'
     }
     let ContactColor_2 = () => {
         document.querySelector('#constainer h1').style.color = '#63b256'
+        document.querySelectorAll('#container-1 #contect_form div input').forEach(border => { border.style.borderColor = '#63b256' })
+        document.querySelector('#container-1 #contect_form div textarea').style.borderColor = '#63b256'
+
     }
 
     let ContactColor_3 = () => {
         document.querySelector('#constainer h1').style.color = '#ffab4b'
+        document.querySelectorAll('#container-1 #contect_form div input').forEach(border => { border.style.borderColor = '#ffab4b' })
+        document.querySelector('#container-1 #contect_form div textarea').style.borderColor = '#ffab4b'
+
     }
 
 
@@ -587,14 +598,14 @@ ContactPage()
 
 const News_Page = () => {
     let NewsColor_1 = () => {
-        document.querySelectorAll('#container_1 #left,#right ').forEach(border=>border.style.borderColor = '#42abcb')
+        document.querySelectorAll('#container_1 #left,#right ').forEach(border => border.style.borderColor = '#42abcb')
     }
     let NewsColor_2 = () => {
-        document.querySelectorAll('#container_1 #left,#right ').forEach(border=>border.style.borderColor = '#63b256')
+        document.querySelectorAll('#container_1 #left,#right ').forEach(border => border.style.borderColor = '#63b256')
     }
 
     let NewsColor_3 = () => {
-        document.querySelectorAll('#container_1 #left,#right ').forEach(border=>border.style.borderColor = '#ffab4b')
+        document.querySelectorAll('#container_1 #left,#right ').forEach(border => border.style.borderColor = '#ffab4b')
     }
 
 

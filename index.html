@@ -2,51 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House of Highflyess International Virtual Academy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="stylesheets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House of Highflyess International Virtual Academy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
+<style>
+  #slider_section {
+    padding: 0 44px;
+   
+  }
+
+  #slider_section h1 {
+    font-size: 30px;
+    color: #FE5D37;
+
+  }
+
+  .swiper {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+
+  .swiper-slide {
+    width: 500px;
+    max-width: 100%;
+    height: 280px;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border: 5px solid #FE5D37;
+    overflow: hidden;
+    border-radius: 104px;
+    position: relative;
+  }
+
+  .swiper-slide h2 {
+    font-size: 15px;
+    line-height: 21px;
+    color: #FE5D37;
+  }
+
+  .swiper-slide h2 span {
+    color: #000;
+  }
+
+  .swiper-slide p {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0px;
+    line-height: 22px;
+    color: #333333;
+  }
+
+  .swiper-slide #big_1 {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 55px;
+    color: #FE5D37;
+  }
+
+  .swiper-slide #big_2 {
+    position: absolute;
+    bottom: -13px;
+    right: 40px;
+    font-size: 55px;
+    color: #FE5D37;
+  }
+
+
+  .swiper-slide #image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #000;
+    overflow: hidden;
+  }
+
+  .swiper-slide #image img {
+    object-fit: cover;
+    object-position: 0 0;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width:650px) {
+    #slider_section {
+      padding: 0;
+
+    }
+  }
+
+  @media (max-width:509px) {
+
+    .swiper-slide {
+      width: 500px;
+      height: 280px;
+
+    }
+  }
+</style>
 
 <body>
-        <div class="none focus_box"></div>
-        <div id="loder">
-            <div id="box"></div>
+  <!-- <div class="none focus_box"></div>
+    <div id="loder">
+        <div id="box"></div>
+    </div> -->
+  <main>
+
+    <header>
+      <nav class="second-nav ">
+        <div id="logo">
+          <div id="logo_image">
+            <a href="./index.html"><img src="image/logoimage.png" alt="Website Logo"></a>
+          </div>
+          <h1>House of Highflyess <br> International Virtual Academy</h1>
         </div>
-    <main>
+        <!-- navigation-1   -->
+        <div class="navigation ">
+          <a href="./about.html">About</a>
+          <a href="./program.html">Programs</a>
+          <a href="./team.html">Team</a>
+          <a href="./contect.html">Contact</a>
+          <a href="./news.html">News</a>
+          <div id="sub_nav">
 
-        <header>
-            <nav class="second-nav ">
-                <div id="logo">
-                    <a href="./index.html"><img src="image/logoimage.png" alt="Website Logo"></a>
-                </div>
-                <!-- navigation-1   -->
-                <div class="navigation ">
-                    <a href="./about.html">About</a>
-                    <a href="./program.html">Programs</a>
-                    <a href="./team.html">Team</a>
-                    <a href="./contect.html">Contact</a>
-                    <div id="sub_nav">
+            <li id="remove_images_btn"><span id="remove_images_btn_inner_span"></span> <abbr title="Remove images from website"><i class="fa-solid fa-images"></i></abbr></li>
+            <li style="display: none; " id="Show_images_btn"><span id="remove_images_btn_inner_span"></span><abbr title="Show images on website"><i class="fa-solid fa-images"></i></abbr></li>
+            <li id="background_color"><abbr title="Change the background color of the page"><i class="fa-solid fa-brush"></i></abbr></li>
+            <div class="background_colors_box">
+              <div id="button-1"></div>
+              <div id="button-2"></div>
+              <div id="button-3"></div>
+            </div>
 
-                        <li id="remove_images_btn"><span id="remove_images_btn_inner_span"></span> <i class="fa-solid fa-images"></i></li>
-                        <li style="display: none; " id="Show_images_btn"><span id="remove_images_btn_inner_span"></span> <i class="fa-solid fa-images"></i></li>
-                    <li id="background_color"> <i class="fa-solid fa-brush"></i></li>
-                    <div class="background_colors_box">
-                        <div id="button-1"></div>
-                        <div id="button-2" ></div>
-                        <div id="button-3" ></div>
-                    </div>
-                    
-                </div>
-                    <i class="fa-solid fa-xmark" id="cross_icon"></i>
-                </div> 
-                <i class="fa-solid fa-bars " id="menue"></i>
-            </nav>
-            <section id="header_banner">
+          </div>
+          <i class="fa-solid fa-xmark" id="cross_icon"></i>
+        </div>
+        <i class="fa-solid fa-bars " id="menue"></i>
+      </nav>
+      <!-- <section id="header_banner">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -79,145 +186,215 @@
                 </div>
 
 
-            </section>
-        </header>
-        <section id="about">
-            <div id="left">
-                <h1>About Us</h1>
-                <p><span>House of Highflyers</span> – as an <span>international virtual academy</span> is striving to
-                    change the dynamics of Education sector and maximizing the learning outcomes of curriculum, to
-                    achieve the purpose, we have developed an Exclusive Curriculum for our Students and introduced a
-                    unique <span>PBL Centered Digital Classroom</span>.</p>
-                <p>We are having a Team of Educationalists, who have been serving the Education sector from decades and
-                    proving their potential by creating an impact on daily lives of Students. Choose to Learn at the
-                    Comfort of Your Home and <span>Enroll Today</span>!</p>
-                
-                <div id="about_btn_div">
-                    <a id="about_btn" href="./about.html">About</a>
-                </div>
-            </div>
+            </section> -->
+    </header>
+    <section id="about">
+      <div id="left">
+        <h1>About Us</h1>
+        <p><span>House of Highflyers</span> – as an <span>international virtual academy</span> is striving to
+          change the dynamics of Education sector and maximizing the learning outcomes of curriculum, to
+          achieve the purpose, we have developed an Exclusive Curriculum for our Students and introduced a
+          unique <span>PBL Centered Digital Classroom</span>.</p>
+        <p>We are having a Team of Educationalists, who have been serving the Education sector from decades and
+          proving their potential by creating an impact on daily lives of Students. Choose to Learn at the
+          Comfort of Your Home and <span>Enroll Today</span>!</p>
 
-            <div id="right">
-                <div id="inder_right">
-
-                    <div id="image1">
-                        <img src="image/about1.jpg" alt="about image-1">
-                    </div>
-                    <div id="image2">
-                        <img src="image/about2.jpg" alt="about image-2">
-                    </div>
-                    <div id="image3">
-                        <img  src="image/about3.jpg" alt="about image-3">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="program_container">
-            <h1 id="main_text">Programs We Offer</h1>
-            <div id="inner_p_container">
-
-                <div id="program_1">
-                    <a href="./enroll.html" id="eroll_btn">Enroll Now</a>
-                    <img src="./image/program1.jpg" alt="This program is about Early Childhood Education">
-                    <span>Early Childhood Education</span>
-                </div>
-                <div id="program_1">
-                    <a href="./enroll.html" id="eroll_btn">Enroll Now</a>
-                    <img src="./image/program2.jpg" alt="This program is about Primary & Secondary Education">
-                    <span>Primary & Secondary Education</span>
-
-                </div>
-                <div id="program_1">
-                    <a href="./enroll.html" id="eroll_btn">Enroll Now</a>
-                    <img src="./image/program4.jpg" alt="This program is about British (IGCSE & A-Levels) Curriculum">
-                    <span>British (IGCSE & A-Levels) Curriculum</span>
-                </div>
-             
-            </div>
-            <div id="more_program_container">
-                <a id="more_program" href="./program.html">More Programs</a>
-            </div>
-        </section>
-        <section id="Choos_us_container">
-            <h1>Why Choose House of Highflyers?</h1>
-            <div id="inner_container">
-                <div>
-                    <h2>1. Globally Recognized Curriculum</h2>
-                    <p>Our online school follows international education standards ensuring students receive a
-                        well-rounded and accredited education.</p>
-                </div>
-                <div>
-
-                    <h2>2. Certified and Experienced Teachers</h2>
-                    <p>Our team of expert educators brings years of experience and a passion for teaching. They are
-                        dedicated to providing personalized support to each student.</p>
-                </div>
-                <div>
-
-                    <h2>3. Interactive and Engaging Learning</h2>
-                    <p>We use the latest e-learning technologies, including live classes, AI-powered learning tools, and
-                        interactive coursework to keep students engaged and motivated.</p>
-                </div>
-                <div>
-
-                    <h2>4. Flexible Learning Schedule</h2>
-                    <p>Our programs cater to different time zones, allowing students to learn at their own pace while
-                        balancing extracurricular activities and personal commitments.</p>
-                </div>
-                <div>
-
-                    <h2>5. Multicultural Community</h2>
-                    <p>Students from diverse backgrounds connect and collaborate, gaining global perspectives and
-                        lifelong friendships.</p>
-                </div>
-
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-column">
-                <h2><em>House Of Highflyers</em></h2>
-                <p>
-                    An international virtual academy is striving to change the dynamics of the Education sector and
-                    maximizing the learning outcomes of the curriculum, to achieve the purpose.
-                </p>
-            </div>
-
-
-
-            <div class="footer-column contact">
-                <h2>CONTACT US</h2>
-                <p><strong>Location:</strong> Karachi - Pakistan.</p>
-                <p><strong>Phone:</strong> +92 347 2722875</p>
-                <p><strong>Email:</strong> houseofhighflyers@gmail.com</p>
-            </div>
-
-            <div class="footer-column logo">
-                <img src="./image/logoimage.png" alt="logo image">
-            </div>
-        </footer>
-        <!-- GO To Top Button -->
-        <div id="go_to_top_btn">
-            <button id="topbtn"> <i class="fa-solid fa-angle-up"></i>
-            </button>
+        <div id="about_btn_div">
+          <a id="about_btn" href="./about.html">About</a>
         </div>
-        <!--  Zoom In and Zoom Out -->
-        <div id="zoom_box">
-            <button id="zoom_in_btn"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
-            <button id="zoom_out_btn"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+      </div>
+
+      <div id="right">
+        <div id="inder_right">
+
+          <div id="image1">
+            <img src="image/about1.jpg" alt="about image-1">
+          </div>
+          <div id="image2">
+            <img src="image/about2.jpg" alt="about image-2">
+          </div>
+          <div id="image3">
+            <img src="image/about3.jpg" alt="about image-3">
+          </div>
         </div>
-    </main>
-    <div id="en_roll_btn">
-        <a href="./enroll.html">Enroll Now</a>
+      </div>
+    </section>
+    <section id="program_container">
+      <h1 id="main_text">Programs We Offer</h1>
+      <div id="inner_p_container">
+
+        <div id="program_1">
+          <a href="./enroll.html" id="eroll_btn">Enroll Now</a>
+          <img src="./image/program1.jpg" alt="This program is about Early Childhood Education">
+          <span>Early Childhood Education</span>
+        </div>
+        <div id="program_1">
+          <a href="./enroll.html" id="eroll_btn">Enroll Now</a>
+          <img src="./image/program2.jpg" alt="This program is about Primary & Secondary Education">
+          <span>Primary & Secondary Education</span>
+
+        </div>
+        <div id="program_1">
+          <a href="./enroll.html" id="eroll_btn">Enroll Now</a>
+          <img src="./image/program4.jpg" alt="This program is about British (IGCSE & A-Levels) Curriculum">
+          <span>British (IGCSE & A-Levels) Curriculum</span>
+        </div>
+
+      </div>
+      <div id="more_program_container">
+        <a id="more_program" href="./program.html">More Programs</a>
+      </div>
+    </section>
+    <section id="Choos_us_container">
+      <h1>Why Choose House of Highflyers?</h1>
+      <div id="inner_container">
+        <div>
+          <h2>1. Globally Recognized Curriculum</h2>
+          <p>Our online school follows international education standards ensuring students receive a
+            well-rounded and accredited education.</p>
+        </div>
+        <div>
+
+          <h2>2. Certified and Experienced Teachers</h2>
+          <p>Our team of expert educators brings years of experience and a passion for teaching. They are
+            dedicated to providing personalized support to each student.</p>
+        </div>
+        <div>
+
+          <h2>3. Interactive and Engaging Learning</h2>
+          <p>We use the latest e-learning technologies, including live classes, AI-powered learning tools, and
+            interactive coursework to keep students engaged and motivated.</p>
+        </div>
+        <div>
+
+          <h2>4. Flexible Learning Schedule</h2>
+          <p>Our programs cater to different time zones, allowing students to learn at their own pace while
+            balancing extracurricular activities and personal commitments.</p>
+        </div>
+        <div>
+
+          <h2>5. Multicultural Community</h2>
+          <p>Students from diverse backgrounds connect and collaborate, gaining global perspectives and
+            lifelong friendships.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="slider_section">
+        
+      <h1> A Transformative Learning Experience</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <big id="big_1">"</big>
+            <div id="image">
+
+              <img src="./image/mother_image_1.jpg" alt="">
+            </div>
+            <h2>Iqra Iftikhar <span>from</span> Doha</h2>
+            <p>I have been with Highflyers international academy for two years for my son and the whole
+              experience has been absolutely amazing. The academy provides a flexible and child-centered
+              curriculum in a very engaging way.
+            </p>
+            <big id="big_2">"</big>
+          </div>
+          <div class="swiper-slide">
+            <big id="big_1">"</big>
+            <div id="image">
+              <img src="./image/mother_image_2.jpg" alt="">
+            </div>
+            <h2>Salma Sadiq <span>from</span> Karachi</h2>
+            <p>Since I enrolled my 10 year old in your Remedial Program, she learned how to connect dots and
+              comprehend well
+            </p>
+            <big id="big_2">"</big>
+          </div>
+          <div class="swiper-slide">
+            <big id="big_1">"</big>
+            <div id="image">
+              <img src="./image/mother_image_3.jpg" alt="">
+            </div>
+            <h2>Dr. Zoya Afzal<span>from</span> KSA</h2>
+            <p>House of Highflyers helped us in our
+              homeschooling Journey, with you my child became a science enthusiast
+
+            </p>
+            <big id="big_2">"</big>
+
+          </div>
+          <div class="swiper-slide">
+            <big id="big_1">"</big>
+            <div id="image">
+              <img src="./image/mother_image_4.jpg" alt="">
+            </div>
+            <h2>Omer Khan<span>from</span> Oman</h2>
+            <p>The way you handled & engaged my Attention
+              Deficit boy online is commendable.
+
+            </p>
+            <big id="big_2">"</big>
+          </div>
+          <div class="swiper-slide">
+            <big id="big_1">"</big>
+            <div id="image">
+              <img src="./image/mother_image_5.jpg" alt="">
+            </div>
+            <h2>Muhammad Faizan <span>from</span> Doha</h2>
+            <p>What I love the most is that the entire system is completely stress-free, making learning enjoyable and effective for my son.
+              I highly recommend House of Highflyers International Virtually Academy to anyone looking for a reliable, well-structured, and stress-free online schooling system!
+
+            </p>
+            <big id="big_2">"</big>
+          </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-column">
+        <h2><em>House Of Highflyers</em></h2>
+        <p>
+          An international virtual academy is striving to change the dynamics of the Education sector and
+          maximizing the learning outcomes of the curriculum, to achieve the purpose.
+        </p>
+      </div>
+
+
+
+      <div class="footer-column contact">
+        <h2>CONTACT US</h2>
+        <p><strong>Location:</strong> Karachi - Pakistan.</p>
+        <p><strong>Phone:</strong> +92 347 2722875</p>
+        <p><strong>Email:</strong> houseofhighflyers@gmail.com</p>
+      </div>
+
+      <div class="footer-column logo">
+        <img src="./image/logoimage.png" alt="logo image">
+      </div>
+    </footer>
+    <!-- GO To Top Button -->
+    <div id="go_to_top_btn">
+      <button id="topbtn"> <i class="fa-solid fa-angle-up"></i>
+      </button>
     </div>
-    <nav id="bottom-nav">
-              
-        <span>
-            <i class="fa-solid fa-envelope"></i>
-            <a target="_blank"  rel="noopener noreferrer"  href="https://quasain-consultants.com/">
-                quasain-consultants
-            </a>
-        </span>
-    </nav> 
+    <!--  Zoom In and Zoom Out -->
+    <div id="zoom_box">
+      <button id="zoom_in_btn"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+      <button id="zoom_out_btn"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+    </div>
+  </main>
+  <div id="en_roll_btn">
+    <a href="./enroll.html">Enroll Now</a>
+  </div>
+  <nav id="bottom-nav">
+
+    <span>
+      <i class="fa-solid fa-envelope"></i>
+      <a target="_blank" rel="noopener noreferrer" href="https://quasain-consultants.com/">
+        quasain-consultants
+      </a>
+    </span>
+  </nav>
 </body>
 <script src="scripts/script.js"></script>
 <script src="scripts/background_mode.js"></script>
@@ -226,14 +403,35 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
-        },
-    });
-   
+  // var swiper = new Swiper(".mySwiper", {
+  //     loop: true,
+  //     pagination: {
+  //         el: ".swiper-pagination",
+  //         dynamicBullets: true,
+  //     },
+  // });
+
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 20000, // Slide changes every 3 seconds
+      disableOnInteraction: false, // Keeps autoplay even after user interaction
+    },
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 400,
+      depth: 300,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 </script>
 
 

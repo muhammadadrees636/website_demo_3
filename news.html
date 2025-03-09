@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enroll page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="stylesheets/news.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    max-width: 100%;
+    width: 400px;
+    height: 760px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slider_remove_btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 39px;
+    color: #fff;
+    z-index: 9;
+  }
+  @media (max-width:635px) {
+    .slider_remove_btn{
+        color: #000;
+    }
+  }
+</style>
+
+<body>
+  <!-- <div id="loder">
+        <div id="box"></div>
+    </div>  -->
+  <header>
+    <nav class="second-nav ">
+      <div id="logo">
+        <div id="logo_image">
+          <a href="./index.html"><img src="image/logoimage.png" alt="Website Logo"></a>
+        </div>
+        <h1>House of Highflyess <br> International Virtual Academy</h1>
+      </div>
+      <!-- navigation-1   -->
+      <div class="navigation ">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./program.html">Programs</a>
+        <a href="./team.html">Team</a>
+        <a href="./contect.html">Contact</a>
+        <div id="sub_nav">
+
+          <li id="remove_images_btn"><span id="remove_images_btn_inner_span"></span> <i class="fa-solid fa-images"></i></li>
+          <li style="display: none; " id="Show_images_btn"><span id="remove_images_btn_inner_span"></span> <i class="fa-solid fa-images"></i></li>
+          <li id="background_color"> <i class="fa-solid fa-brush"></i></li>
+          <div class="background_colors_box">
+            <div id="button-1"></div>
+            <div id="button-2"></div>
+            <div id="button-3"></div>
+          </div>
+
+        </div>
+        <i class="fa-solid fa-xmark" id="cross_icon"></i>
+      </div>
+      <i class="fa-solid fa-bars " id="menue"></i>
+    </nav>
+    <section id="header_banner">
+      <img src="./image/111111.jpg" alt="Header banner image-1">
+      <span></span>
+      <h1>New of House of Highflyess International Virtual Academy</h1>
+    </section>
+  </header>
+  <!-- Container -->
+  <div id="container_1">
+    <div id="left">
+      <img src="./image/news_page_1.jpg" alt="">
+    </div>
+    <div id="right">
+      <img src="./image/news_page_2.jpg" alt="">
+    </div>
+    <div class="display_box news_image_display_hidden">
+        <i class="fa-solid fa-xmark slider_remove_btn"></i>
+      <div id="image">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+              <img src="" alt="">
+            </div>
+            <div class="swiper-slide ">
+              <img src="" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-column">
+      <h2><em>House Of Highflyers</em></h2>
+      <p>
+        An international virtual academy is striving to change the dynamics of the Education sector and
+        maximizing the learning outcomes of the curriculum, to achieve the purpose.
+      </p>
+    </div>
+
+
+
+    <div class="footer-column contact">
+      <h2>CONTACT US</h2>
+      <p><strong>Location:</strong> Karachi - Pakistan.</p>
+      <p><strong>Phone:</strong> +92 347 2722875</p>
+      <p><strong>Email:</strong> houseofhighflyers@gmail.com</p>
+    </div>
+
+    <div class="footer-column logo">
+
+      <img src="./image/logoimage.png" alt="Website logo image">
+
+    </div>
+  </footer>
+  <div id="go_to_top_btn">
+    <button id="topbtn"> <i class="fa-solid fa-angle-up"></i>
+    </button>
+  </div>
+
+  <div id="zoom_box">
+    <button id="zoom_in_btn"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+    <button id="zoom_out_btn"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+  </div>
+  <nav id="bottom-nav">
+
+    <span>
+      <i class="fa-solid fa-envelope"></i>
+      <a target="_blank" rel="noopener noreferrer" href="https://quasain-consultants.com/">
+        quasain-consultants
+      </a>
+    </span>
+  </nav>
+</body>
+<script src="scripts/script.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+
+</html>

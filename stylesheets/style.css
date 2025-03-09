@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial;
+    /* font-family: ' Gothic' */
 }
 
 html,
@@ -149,25 +149,44 @@ header {
     background-position: center;
     background-repeat: repeat-x;
 }
-
-.second-nav #logo {
+#logo_image{
     width: 100px;
-    z-index: 999;
+    z-index: 999; 
+}
+.second-nav #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+#logo h1{
+    color: #2A5675;
+    font-size: 19px;
 }
 
-
+@media (max-width:768px) {
+    #logo h1{
+        font-size: 15px;
+    }
+    #logo_image{
+        width: 70px;
+    }
+}
 .second-nav #logo img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* navigation */
 
 /* for mobile and other short devices */
 
-@media (max-width:685px) {
+@media (max-width:894px) {
     .second-nav #logo {
-        width: 80px;
+        width: 100%;
+        justify-content: start;
     }
 
     .second-nav {
@@ -185,7 +204,7 @@ header {
         z-index: 999;
         padding: 0 10px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding-top: 10px;
         gap: 20px;
@@ -207,7 +226,8 @@ header {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 10px;
+        margin-top: 10px;
         position: relative;
         padding-left: 5px;
         position: absolute;
@@ -325,7 +345,7 @@ header {
 
 }
 
-@media (min-width:685px) {
+@media (min-width:894px) {
     .second-nav .navigation {
         display: flex;
         justify-content: center;
@@ -476,7 +496,31 @@ header {
     }
 }
 
-main header #header_banner {
+@media (max-width:425px) {
+#logo h1{
+    font-size: 15px;
+}
+}
+
+
+@media (max-width:375px) {
+    #logo h1{
+        font-size: 11px;
+    }
+    #logo_image{
+        width: 50px;
+    }
+    .second-nav {
+        padding: 0 5px;
+    }
+    .second-nav .navigation #sub_nav {
+        gap: 1px;
+        margin-top: 10px;
+        right: 7px        
+    }
+    }
+    
+    main header #header_banner {
     width: 100%;
     height: 476px;
     display: flex;
@@ -1188,3 +1232,4 @@ main #about #left #about_btn_div #about_btn:hover {
     border-bottom-color: #fe5c37;
     border-right-color: #fe5c37;
 }
+

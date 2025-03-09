@@ -15,8 +15,17 @@ let ResponsiveNavBar = () => {
 
 ResponsiveNavBar()
 
+// News_Image_Display function
 
-function ImageRotationFunction() {
+
+
+// Font_size
+document.querySelectorAll('h1').forEach(h1 => {
+    h1.style.fontFamily = 'Gothic Medium'
+});
+
+
+const ImageRotationFunction  =()=> {
     var loder = document.querySelector("#loder #box");
     var rotatevla = 1;
     const imgRotateFun = () => {
@@ -27,17 +36,17 @@ function ImageRotationFunction() {
     setInterval(function () {
         imgRotateFun()
     }, 100);
-
+    setTimeout(() => {
+        var loder = document.querySelector("#loder");
+        loder.style.display = "none"
+    }, 2000);
 }
-
-setTimeout(() => {
-    var loder = document.querySelector("#loder");
-    loder.style.display = "none"
-}, 2000);
 
 document.addEventListener('DOMContentLoaded', function () {
     ImageRotationFunction()
 })
+
+
 let GoToTopFunction = () => {
     var Button = document.querySelector('#topbtn')
     Button.addEventListener('click', () => {
@@ -52,6 +61,7 @@ GoToTopFunction()
 
 
 // Make the  nav Stickey 
+
 window.addEventListener('scroll', function () {
 
     var nav = document.querySelector('.second-nav')
@@ -119,6 +129,9 @@ background_color.addEventListener('click', function () {
     }
 
 })
+
+
+
 
 const HomePage = () => {
 
@@ -563,6 +576,9 @@ const ContactPage = () => {
     document.querySelector("#button-3").addEventListener("click", ContactColor_3)
 }
 ContactPage()
+
+
+
 const ZoomFun = () => {
     var para_size = 16;
     var size = 30;
@@ -608,10 +624,39 @@ const ZoomFun = () => {
     });
 }
 ZoomFun()
+const News_Image_Display = () => {
+    document.querySelector("#container_1").addEventListener("click", function (e) {
+        var image_slider =document.querySelectorAll('.swiper-slide img')
+        if (e.target.tagName === "IMG") { // Ensure target is an image
+            const imgSrc = e.target.src;
+            image_slider.forEach(slide=>{
+
+                if (imgSrc.endsWith("news_page_1.jpg")) {
+                    image_slider[0].src = "http://127.0.0.1:5500/image/news_page_1.jpg";
+                    image_slider[1].src = "http://127.0.0.1:5500/image/news_page_2.jpg";
+                    document.querySelector(".display_box").classList.remove("news_image_display_hidden");
+                } else if (imgSrc.endsWith("news_page_2.jpg")) {
+                   image_slider[0].src = "http://127.0.0.1:5500/image/news_page_2.jpg";
+                   image_slider[1].src = "http://127.0.0.1:5500/image/news_page_1.jpg";
+                    document.querySelector(".display_box").classList.remove("news_image_display_hidden");
+                }
+            })
+            }
+    });
+
+    document.querySelector(".slider_remove_btn").addEventListener("click", function () {
+        document.querySelector(".display_box ").classList.add("news_image_display_hidden");
+    });
+};
+
+document.addEventListener("DOMContentLoaded", News_Image_Display);
+
+
+
 let Input_text_form_keybord = () => {
     var key_board_button = document.querySelector(".key_board_button");
     var buttons = document.querySelectorAll(".keyboard button");
-    var Chat_keybord = document.querySelector('.keyboard');
+    var Chat_keybord = document.querySelector(".keyboard");
     var inputs = document.querySelectorAll("input");
     var textarea = document.querySelector("textarea");
     var delete_Btn = document.querySelector(".delete");
@@ -621,14 +666,18 @@ let Input_text_form_keybord = () => {
 
     // Detect the focused input field
     inputs.forEach(input => {
-        input.addEventListener('focus', () => {
+        input.addEventListener("focus", () => {
             activeInput = input; // Set the active input field
         });
     });
 
+    textarea.addEventListener("focus", () => {
+        activeInput = textarea;
+    });
+
     // Keyboard button click functionality
     buttons.forEach(btn => {
-        btn.addEventListener('click', (event) => {
+        btn.addEventListener("click", (event) => {
             if (activeInput) {
                 var button_val = event.target.innerHTML;
                 activeInput.value += button_val; // Append to the active input field
@@ -636,32 +685,23 @@ let Input_text_form_keybord = () => {
         });
     });
 
-
-    textarea.addEventListener('focus', () => {
-        activeInput = textarea
-    })
-
-    delete_Btn.addEventListener('click', function () {
-        string = string.substring(0, string.length - 1);
-        activeInput.value = string;
-
-    })
-
-    key_board_button.addEventListener("click", function () {
-        console.log('Hellow');
-
-        if (key_counter) {
-            Chat_keybord.classList.remove('Chat_keybord_display_none')
-            key_counter = false;
-
-
+    // Delete button functionality
+    delete_Btn.addEventListener("click", function () {
+        if (activeInput && activeInput.value.length > 0) {
+            activeInput.value = activeInput.value.slice(0, -1);
         }
-        else {
-            Chat_keybord.classList.add('Chat_keybord_display_none')
+    });
+
+    // Toggle keyboard visibility
+    key_board_button.addEventListener("click", function () {
+        if (key_counter) {
+            Chat_keybord.classList.remove("Chat_keybord_display_none");
+            key_counter = false;
+        } else {
+            Chat_keybord.classList.add("Chat_keybord_display_none");
             key_counter = true;
         }
-    })
-}
+    });
+};
 
-
-Input_text_form_keybord()
+document.addEventListener("DOMContentLoaded", Input_text_form_keybord);

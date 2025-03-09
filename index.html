@@ -18,8 +18,13 @@
   #slider_section h1 {
     font-size: 30px;
     color: #FE5D37;
-
   }
+  @media (max-width: 535px) {
+    #slider_section h1 {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
 
   .swiper {
     width: 100%;
@@ -315,7 +320,7 @@
             <div id="image">
               <img src="./image/mother_image_3.jpg" alt="">
             </div>
-            <h2>Dr. Zoya Afzal<span>from</span> KSA</h2>
+            <h2>Dr. Zoya Afzal <span>from</span> KSA</h2>
             <p>House of Highflyers helped us in our
               homeschooling Journey, with you my child became a science enthusiast
 
@@ -328,7 +333,7 @@
             <div id="image">
               <img src="./image/mother_image_4.jpg" alt="">
             </div>
-            <h2>Omer Khan<span>from</span> Oman</h2>
+            <h2>Omer Khan <span>from</span> Oman</h2>
             <p>The way you handled & engaged my Attention
               Deficit boy online is commendable.
 
@@ -374,8 +379,7 @@
     </footer>
     <!-- GO To Top Button -->
     <div id="go_to_top_btn">
-      <button id="topbtn"> <i class="fa-solid fa-angle-up"></i>
-      </button>
+      <button id="topbtn"> <i class="fa-solid fa-angle-up"></i></button>
     </div>
     <!--  Zoom In and Zoom Out -->
     <div id="zoom_box">
@@ -414,24 +418,35 @@
   var swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
-      delay: 20000, // Slide changes every 3 seconds
-      disableOnInteraction: false, // Keeps autoplay even after user interaction
+        delay: 700, // Slide changes every 0.7 seconds
+        disableOnInteraction: false, // Keeps autoplay even after user interaction
     },
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
-      rotate: 30,
-      stretch: 400,
-      depth: 300,
-      modifier: 1,
-      slideShadows: true,
+        rotate: 30,
+        stretch: 400,
+        depth: 300,
+        modifier: 1,
+        slideShadows: true,
     },
     pagination: {
-      el: ".swiper-pagination",
+        el: ".swiper-pagination",
     },
-  });
+});
+
+// ✅ **Stop autoplay on mouseenter**
+document.querySelector(".mySwiper").addEventListener("mouseenter", function () {
+    swiper.autoplay.stop();
+});
+
+// ✅ **Restart autoplay on mouseleave**
+document.querySelector(".mySwiper").addEventListener("mouseleave", function () {
+    swiper.autoplay.start();
+});
+
 </script>
 
 

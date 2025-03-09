@@ -205,7 +205,7 @@ header {
         padding: 0 10px;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: center;
+        align-items: start;
         padding-top: 10px;
         gap: 20px;
         padding-bottom: 20px;
@@ -498,7 +498,7 @@ header {
 
 @media (max-width:425px) {
 #logo h1{
-    font-size: 15px;
+    font-size: 13px;
 }
 }
 

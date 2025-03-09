@@ -229,7 +229,7 @@ const HomePage = () => {
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#ffab4b"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.color = "#ffab4b"
             document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#ffab4b"
-
+            
 
 
             document.querySelectorAll('nav .navigation #sub_nav li i').forEach(i => {
@@ -279,6 +279,12 @@ const HomePage = () => {
             document.querySelector(' #Choos_us_container ').style.backgroundColor = "rgb(255 241 224)"
             document.querySelector(' #Choos_us_container h1').style.color = "#000"
         }
+        let Slider_Section=()=>{
+            document.querySelectorAll('.swiper.swiper-slide').forEach(border=>{border.style.borderColor = "#42abcb"})
+            document.querySelector('.swiper-slide h2 ').forEach(h2 => {
+                h2.style.color ="red"
+            });
+        }
         let FooterSection = () => {
             document.querySelector('.footer').style.backgroundColor = 'rgb(255 241 224)'
             document.querySelector('.footer').style.backgroundColor = 'rgb(255 241 224)'
@@ -297,6 +303,7 @@ const HomePage = () => {
         ProgramSection()
         Choos_us_Section()
         FooterSection()
+        Slider_Section()
 
     }
 
@@ -578,7 +585,24 @@ const ContactPage = () => {
 ContactPage()
 
 
+const News_Page = () => {
+    let NewsColor_1 = () => {
+        document.querySelectorAll('#container_1 #left,#right ').forEach(border=>border.style.borderColor = '#42abcb')
+    }
+    let NewsColor_2 = () => {
+        document.querySelectorAll('#container_1 #left,#right ').forEach(border=>border.style.borderColor = '#63b256')
+    }
 
+    let NewsColor_3 = () => {
+        document.querySelectorAll('#container_1 #left,#right ').forEach(border=>border.style.borderColor = '#ffab4b')
+    }
+
+
+    document.querySelector("#button-1").addEventListener("click", NewsColor_1)
+    document.querySelector("#button-2").addEventListener("click", NewsColor_2)
+    document.querySelector("#button-3").addEventListener("click", NewsColor_3)
+}
+News_Page()
 const ZoomFun = () => {
     var para_size = 16;
     var size = 30;

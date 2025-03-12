@@ -1403,7 +1403,7 @@ main #about #left #about_btn_div #about_btn:hover {
     }
 
     .scroll-container {
-      margin-top: 44px;
+      margin-top: 79px;
     }
 
     .flag-container {
@@ -1415,3 +1415,8 @@ main #about #left #about_btn_div #about_btn:hover {
       height: 32px;
     }
   }
+  @media (max-width:368px) {
+    .scroll-container {
+        margin-top: 85px;
+      }
+}

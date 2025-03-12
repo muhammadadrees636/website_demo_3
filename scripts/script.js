@@ -23,13 +23,24 @@ ResponsiveNavBar()
 document.querySelectorAll('h1').forEach(h1 => {
     h1.style.fontFamily = 'Gothic Medium'
 });
+document.querySelectorAll('h2').forEach(h2 => {
+    h2.style.fontFamily = `Gothic A1", sans-serif`
+    h2.style.fontWeight = 400
+    h2.style.fontFamily = 'normal'
+});
+document.querySelectorAll('p').forEach(p => {
+    p.style.fontFamily = `Gothic A1", sans-serif`
+    p.style.fontWeight = 400
+    p.style.fontFamily = 'normal'
+});
+
 
 
 const ImageRotationFunction = () => {
     var loder = document.querySelector("#loder #box");
     var rotatevla = 1;
     const imgRotateFun = () => {
-        loder.style.transform = `rotate(${rotatevla + 0}deg)`; // Corrected: Added 'deg' to the rotate value
+        loder.style.transform = `rotate(${rotatevla + 0}deg)`;
         loder.style.transition = `.3s `;
         rotatevla += 20;
     }
@@ -203,12 +214,8 @@ const HomePage = () => {
             document.querySelectorAll('.footer .footer-column p').forEach(p => { p.style.color = '#fff' })
         }
         document.querySelector(' #slider_section h1 ').style.color = "#42abcb"
-        // document.querySelector('#en_roll_btn a ').style.borderColor = "#42abcb"
-        // document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
-        // document.querySelector('#en_roll_btn a ').style.color = "#000"
-        // document.querySelector('#go_to_top_btn button').style.borderColor = '#42abcb'
-        // document.querySelector('#go_to_top_btn button').style.backgroundColor = "#fff"
-        // document.querySelector('#go_to_top_btn button').style.color = "#000"
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #42abcb"
+
         HeaderFunction()
         AboutSection()
         ProgramSection()
@@ -288,12 +295,7 @@ const HomePage = () => {
             document.querySelectorAll('.footer .footer-column p').forEach(p => { p.style.color = '#000' })
         }
         document.querySelector(' #slider_section h1 ').style.color = "#ffab4b"
-        // document.querySelector('#en_roll_btn a ').style.borderColor = "#ffab4b"
-        // document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
-        // document.querySelector('#en_roll_btn a ').style.color = "#000"
-        // document.querySelector('#go_to_top_btn button').style.borderColor = "#ffab4b"
-        // document.querySelector('#go_to_top_btn button').style.backgroundColor = "#fff"
-        // document.querySelector('#go_to_top_btn button').style.color = "#000"
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #ffab4b"
 
         HeaderFunction()
         AboutSection()
@@ -370,12 +372,8 @@ const HomePage = () => {
             document.querySelectorAll('.footer .footer-column p').forEach(p => { p.style.color = '#000' })
         }
         document.querySelector(' #slider_section h1 ').style.color = "#63b256"
-        // document.querySelector('#en_roll_btn a ').style.borderColor = "#63b256"
-        // document.querySelector('#en_roll_btn a ').style.backgroundColor = "#fff"
-        // document.querySelector('#en_roll_btn a ').style.color = "#000"
-        // document.querySelector('#go_to_top_btn button ').style.borderColor = "#63b256"
-        // document.querySelector('#go_to_top_btn button  ').style.backgroundColor = "#fff"
-        // document.querySelector('#go_to_top_btn button ').style.color = "#000"
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #63b256"
+
 
         HeaderFunction()
         AboutSection()
@@ -427,6 +425,7 @@ const AboutPage = () => {
             document.querySelectorAll('.footer .footer-column h2').forEach(h2 => { h2.style.color = '#000' })
             document.querySelectorAll('.footer .footer-column p').forEach(p => { p.style.color = '#000' })
         }
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #42abcb"
 
         Constainer_1()
         Footer()
@@ -450,6 +449,7 @@ const AboutPage = () => {
             document.querySelector('.footer').style.backgroundColor = '#63b256'
             document.querySelectorAll('.footer .footer-column h2').forEach(h2 => { h2.style.color = '#fff' })
         }
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #63b256"
 
         Constainer_1()
         Footer()
@@ -470,6 +470,8 @@ const AboutPage = () => {
             document.querySelector('.footer').style.backgroundColor = '#ffab4b'
             document.querySelectorAll('.footer .footer-column h2').forEach(h2 => { h2.style.color = '#000' })
         }
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #ffab4b"
+
         Constainer_1()
         Footer()
     }
@@ -490,7 +492,6 @@ AboutPage()
 
 const ProgramPage = () => {
     let ProgramPageColor_1 = () => {
-
         document.querySelectorAll('#container-1 #program_1 span').forEach(span => {
             span.style.backgroundColor = '#42abcb'
         })
@@ -500,9 +501,11 @@ const ProgramPage = () => {
         document.querySelector('.footer').style.backgroundColor = '#42abcb'
         document.querySelectorAll('.footer h2').forEach(h2 => h2.style.color = '#000')
         document.querySelectorAll('.footer p').forEach(p => p.style.color = '#000')
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #42abcb"
 
     }
     let ProgramPageColor_2 = () => {
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #63b256"
 
         document.querySelectorAll('#container-1 #program_1 span').forEach(span => {
             span.style.backgroundColor = '#63b256'
@@ -514,6 +517,7 @@ const ProgramPage = () => {
         document.querySelectorAll('.footer h2').forEach(h2 => h2.style.color = '#000')
     }
     let ProgramPageColor_3 = () => {
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #ffab4b"
 
         document.querySelectorAll('#container-1 #program_1 span').forEach(span => {
             span.style.backgroundColor = '#ffab4b'
@@ -539,6 +543,7 @@ const TeamPage = () => {
         document.querySelector('#container-1 #innder h1').style.color = '#42abcb'
         document.querySelector('#container-2 #inner img').style.borderColor = "#42abcb"
         document.querySelectorAll('#container-1 #innder p span').forEach(span => { span.style.color = "#42abcb" })
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #42abcb"
 
     }
     let TeamColor_2 = () => {
@@ -547,7 +552,7 @@ const TeamPage = () => {
         document.querySelector('#container-1 #innder h1').style.color = '#63b256'
         document.querySelector('#container-2 #inner img').style.borderColor = "#63b256"
         document.querySelectorAll('#container-1 #innder p span').forEach(span => { span.style.color = "#63b256" })
-
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #63b256"
 
     }
 
@@ -557,7 +562,7 @@ const TeamPage = () => {
         document.querySelector('#container-1 #innder h1').style.color = '#ffab4b'
         document.querySelector('#container-2 #inner img').style.borderColor = "#ffab4b"
         document.querySelectorAll('#container-1 #innder p span').forEach(span => { span.style.color = "#ffab4b" })
-
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #ffab4b"
 
     }
 
@@ -573,11 +578,14 @@ const ContactPage = () => {
         document.querySelector('#constainer h1').style.color = '#42abcb'
         document.querySelectorAll('#container-1 #contect_form div input').forEach(border => { border.style.borderColor = '#42abcb' })
         document.querySelector('#container-1 #contect_form div textarea').style.borderColor = '#42abcb'
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #42abcb"
+
     }
     let ContactColor_2 = () => {
         document.querySelector('#constainer h1').style.color = '#63b256'
         document.querySelectorAll('#container-1 #contect_form div input').forEach(border => { border.style.borderColor = '#63b256' })
         document.querySelector('#container-1 #contect_form div textarea').style.borderColor = '#63b256'
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #63b256"
 
     }
 
@@ -585,6 +593,7 @@ const ContactPage = () => {
         document.querySelector('#constainer h1').style.color = '#ffab4b'
         document.querySelectorAll('#container-1 #contect_form div input').forEach(border => { border.style.borderColor = '#ffab4b' })
         document.querySelector('#container-1 #contect_form div textarea').style.borderColor = '#ffab4b'
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #ffab4b"
 
     }
 
@@ -599,13 +608,19 @@ ContactPage()
 const News_Page = () => {
     let NewsColor_1 = () => {
         document.querySelectorAll('#container_1 #left,#right ').forEach(border => border.style.borderColor = '#42abcb')
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #42abcb"
+
     }
     let NewsColor_2 = () => {
         document.querySelectorAll('#container_1 #left,#right ').forEach(border => border.style.borderColor = '#63b256')
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #63b256"
+
     }
 
     let NewsColor_3 = () => {
         document.querySelectorAll('#container_1 #left,#right ').forEach(border => border.style.borderColor = '#ffab4b')
+        document.querySelector('.scroll-container').style.boxShadow = " inset 0 0 40px  #ffab4b"
+
     }
 
 

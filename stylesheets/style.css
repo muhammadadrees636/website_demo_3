@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.gothic-a1-regular {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html,
@@ -16,6 +24,8 @@ head {
     background: #FE5D37;
     color: #fff;
 }
+
+
 
 
 
@@ -148,29 +158,34 @@ header {
     background-position: center;
     background-repeat: repeat-x;
 }
-#logo_image{
+
+#logo_image {
     width: 100px;
-    z-index: 999; 
+    z-index: 999;
 }
+
 .second-nav #logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
-#logo h1{
+
+#logo h1 {
     color: #2A5675;
     font-size: 19px;
 }
 
 @media (max-width:768px) {
-    #logo h1{
+    #logo h1 {
         font-size: 15px;
     }
-    #logo_image{
+
+    #logo_image {
         width: 70px;
     }
 }
+
 .second-nav #logo img {
     width: 100%;
     height: 100%;
@@ -496,30 +511,33 @@ header {
 }
 
 @media (max-width:425px) {
-#logo h1{
-    font-size: 13px;
-}
+    #logo h1 {
+        font-size: 13px;
+    }
 }
 
 
 @media (max-width:375px) {
-    #logo h1{
+    #logo h1 {
         font-size: 11px;
     }
-    #logo_image{
+
+    #logo_image {
         width: 50px;
     }
+
     .second-nav {
         padding: 0 5px;
     }
+
     .second-nav .navigation #sub_nav {
         gap: 1px;
         margin-top: 10px;
-        right: 7px        
+        right: 7px
     }
-    }
-    
-    main header #header_banner {
+}
+
+main header #header_banner {
     width: 100%;
     height: 476px;
     display: flex;
@@ -694,9 +712,10 @@ main #about #right #image3 {
     overflow: hidden;
 }
 
-main #about #right img:hover{
+main #about #right img:hover {
     transform: scale(1.1);
 }
+
 main #about #left {
     width: 56%;
     height: 100%;
@@ -827,9 +846,11 @@ main #about #left #about_btn_div #about_btn:hover {
     z-index: -1;
     transition: .3s;
 }
-#program_container #program_1:hover{
+
+#program_container #program_1:hover {
     transform: scale(1.1);
 }
+
 #program_container #program_1 span {
     position: absolute;
     width: 100%;
@@ -993,6 +1014,14 @@ main #about #left #about_btn_div #about_btn:hover {
     flex-wrap: wrap;
 }
 
+.footer:nth-child(2) #flex_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 .footer-column {
     width: 300px;
 }
@@ -1013,6 +1042,27 @@ main #about #left #about_btn_div #about_btn:hover {
     line-height: 1.6;
 }
 
+.footer_two{
+    display: flex;
+    padding: 60px 40px;
+    justify-content: center;
+    background: #1b1b1b;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.footer_two  #flag_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.footer_two  #flag_nav img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+}
 .quick-links {
     display: flex;
     flex-wrap: wrap;
@@ -1208,10 +1258,10 @@ main #about #left #about_btn_div #about_btn:hover {
 }
 
 
-#loder{
+#loder {
     height: 100%;
     width: 100%;
-    background:#fff;
+    background: #fff;
     position: fixed;
     top: 0;
     left: 0;
@@ -1221,9 +1271,9 @@ main #about #left #about_btn_div #about_btn:hover {
     align-items: center;
 }
 
-#loder #box{
+#loder #box {
     height: 150px;
-    width:150px;
+    width: 150px;
     background: transparent;
     border-radius: 50%;
     border: 5px solid transparent;
@@ -1232,3 +1282,136 @@ main #about #left #about_btn_div #about_btn:hover {
     border-right-color: #fe5c37;
 }
 
+
+
+
+/* Flag bar */
+
+
+  .scroll-container {
+    position: relative;
+    height: 45px;   
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 40px #fe5c37;
+    margin-bottom: 5px;
+}
+
+  .flag-container {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flag-container.left {
+    left: 0;
+  }
+
+  .flag-container.right {
+    right: 0;
+  }
+
+  .flag-image {
+    position: absolute;
+    width: 64px;
+    height: 42px;
+    opacity: 0;
+    animation: flagCycle 2.5s infinite;
+    transition: transform 0.2s;
+  }
+
+  .flag-image:hover {
+    transform: scale(1.05);
+  }
+
+  .flag-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .flag-image img {
+    font-size: 10px;
+  }
+  .scroll-text {
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+  }
+  @media (max-width:423px) {
+    .scroll-text {
+        width: 50%;
+    }
+  }
+  .scroll-text p {
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 15s linear infinite;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    letter-spacing: 1px;
+    margin-top: 16px;
+  }
+
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes flagCycle {
+    0% {
+      opacity: 1;
+    }
+
+    16.66% {
+      opacity: 1;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .content {
+    padding: 3rem 2rem;
+    margin-top: 130px;
+    min-height: 80vh;
+    background: #f8f9fa;
+  }
+
+  @media (max-width: 768px) {
+    .menu-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+
+    .scroll-container {
+      margin-top: 44px;
+    }
+
+    .flag-container {
+      width: 80px;
+    }
+
+    .flag-image {
+      width: 48px;
+      height: 32px;
+    }
+  }

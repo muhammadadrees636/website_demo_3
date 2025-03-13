@@ -1042,7 +1042,7 @@ main #about #left #about_btn_div #about_btn:hover {
     line-height: 1.6;
 }
 
-.footer_two{
+.footer_two {
     display: flex;
     padding: 60px 40px;
     justify-content: center;
@@ -1050,19 +1050,22 @@ main #about #left #about_btn_div #about_btn:hover {
     color: #fff;
     flex-wrap: wrap;
 }
-.footer_two  #flag_nav {
+
+.footer_two #flag_nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
-.footer_two  #flag_nav img{
+
+.footer_two #flag_nav img {
     height: 80px;
     width: 80px;
     object-fit: cover;
     object-position: center;
     border-radius: 50px;
 }
+
 .quick-links {
     display: flex;
     flex-wrap: wrap;
@@ -1288,9 +1291,9 @@ main #about #left #about_btn_div #about_btn:hover {
 /* Flag bar */
 
 
-  .scroll-container {
+.scroll-container {
     position: relative;
-    height: 45px;   
+    height: 45px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -1299,7 +1302,7 @@ main #about #left #about_btn_div #about_btn:hover {
     margin-bottom: 5px;
 }
 
-  .flag-container {
+.flag-container {
     position: absolute;
     top: 0;
     width: 120px;
@@ -1307,116 +1310,139 @@ main #about #left #about_btn_div #about_btn:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .flag-container.left {
+.flag-container.left {
     left: 0;
-  }
+}
 
-  .flag-container.right {
+.flag-container.right {
     right: 0;
-  }
+}
 
-  .flag-image {
+.flag-image {
     position: absolute;
     width: 64px;
     height: 42px;
     opacity: 0;
     animation: flagCycle 2.5s infinite;
     transition: transform 0.2s;
-  }
+}
 
-  .flag-image:hover {
+.flag-image:hover {
     transform: scale(1.05);
-  }
+}
 
-  .flag-image img {
+.flag-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-  }
-  .flag-image img {
+    object-fit: cover;
+}
+
+.flag-image img {
     font-size: 10px;
-  }
-  .scroll-text {
+}
+
+.scroll-text {
     width: 70%;
     height: 100%;
     overflow: hidden;
-  }
-  @media (max-width:423px) {
+
+}
+
+@media (max-width:423px) {
     .scroll-text {
         width: 50%;
     }
-  }
-  .scroll-text p {
+}
+
+.scroll-text p {
     white-space: nowrap;
     display: inline-block;
     padding-left: 100%;
-    animation: scrollText 15s linear infinite;
+    animation: scrollText 40s linear infinite;
     font-family: 'Arial', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #333;
     letter-spacing: 1px;
     margin-top: 16px;
-  }
+}
 
-  @keyframes scrollText {
+@keyframes scrollText {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
 
     100% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
+}
 
-  @keyframes flagCycle {
+@keyframes flagCycle {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
 
-    16.66% {
-      opacity: 1;
+    33.33% {
+        opacity: 1;
     }
 
-    20% {
-      opacity: 0;
+    40% {
+        opacity: 0;
     }
 
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
-  .content {
+.flag-image {
+    position: absolute;
+    width: 64px;
+    height: 42px;
+    opacity: 0;
+    animation: flagCycle 5s infinite;
+    /* Slowed down */
+    transition: transform 0.2s;
+}
+
+
+.content {
     padding: 3rem 2rem;
     margin-top: 130px;
     min-height: 80vh;
     background: #f8f9fa;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .menu-bar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
     }
 
     .scroll-container {
-      margin-top: 79px;
+        margin-top: 79px;
     }
 
     .flag-container {
-      width: 80px;
+        width: 80px;
     }
 
     .flag-image {
-      width: 48px;
-      height: 32px;
+        width: 48px;
+        height: 32px;
     }
-  }
-  @media (max-width:368px) {
+}
+
+@media (max-width:894px) {
+    .scroll-container {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width:368px) {
     .scroll-container {
         margin-top: 85px;
-      }
+    }
 }

@@ -37,7 +37,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #fe5c37db;
+    background-color: #fe5c37;
 }
 
 #header_banner img {
@@ -82,7 +82,7 @@ header {
 }
 
 #container_1 #left, #right{
-    height: 500px;
+    height: 347px;
     border: 5px solid #fe5c37;
     padding: 10px;
     cursor: pointer;
@@ -149,7 +149,6 @@ header {
     font-size: 20px;
     cursor: pointer;
     background: #fff;
-    color: #000;
     border: 2px solid #fe5c37;
     outline: none;
     transition: .3s;

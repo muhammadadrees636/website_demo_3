@@ -1,15 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* font-family: "Gothic A1", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
 }
 
-.gothic-a1-regular {
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+em,
+li {
+    font-family: 'Inter', sans-serif;
 }
 
 html,
@@ -969,6 +984,9 @@ main #about #left #about_btn_div #about_btn:hover {
     main #about #right {
         width: 100%;
     }
+    main #about #left{
+        padding: 13px;
+    }
 }
 
 @media (max-width:557px) {
@@ -987,15 +1005,14 @@ main #about #left #about_btn_div #about_btn:hover {
 @media (max-width:402px) {
     main #about {
         flex-direction: column;
-        gap: 100px;
+        
     }
 
 }
 
 @media (max-width:364px) {
-    main #about {
-        gap: 200px;
-    }
+   
+
 
     main #about #right #image1 {
         height: 270px;
@@ -1147,7 +1164,6 @@ main #about #left #about_btn_div #about_btn:hover {
     padding-left: 39px;
     padding-right: 39px;
     padding-bottom: 50px;
-    border-top: 2px solid #63b256;
 }
 
 

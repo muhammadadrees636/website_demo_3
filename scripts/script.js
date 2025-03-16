@@ -20,19 +20,12 @@ ResponsiveNavBar()
 
 
 // Font_size
-document.querySelectorAll('h1').forEach(h1 => {
-    h1.style.fontFamily = 'Gothic Medium'
-});
-document.querySelectorAll('h2').forEach(h2 => {
-    h2.style.fontFamily = `Gothic A1", sans-serif`
-    h2.style.fontWeight = 400
-    h2.style.fontFamily = 'normal'
-});
-document.querySelectorAll('p').forEach(p => {
-    p.style.fontFamily = `Gothic A1", sans-serif`
-    p.style.fontWeight = 400
-    p.style.fontFamily = 'normal'
-});
+
+// document.querySelectorAll('p').forEach(p => {
+//     p.style.fontFamily = `sans-serif`
+//     p.style.fontWeight = 400
+//     p.style.fontFamily = 'normal'
+// });
 
 
 
@@ -182,6 +175,9 @@ const HomePage = () => {
             document.querySelector('#about #about_btn_div #about_btn').style.backgroundColor = '#fff'
             document.querySelector('#about #about_btn_div #about_btn').style.color = '#000'
             document.querySelectorAll('#right #inder_right div').forEach(div => { div.style.borderColor = "#42abcb" })
+            document.querySelector('main #about #right #image1').style.borderColor='#42abcb'
+            document.querySelector('main #about #right #image2').style.borderColor='#42abcb'
+            document.querySelector('main #about #right #image3').style.borderColor='#42abcb'
 
         }
         let ProgramSection = () => {
@@ -256,11 +252,14 @@ const HomePage = () => {
         let AboutSection = () => {
             document.querySelector('#about ').style.backgroundColor = 'rgb(255 241 224)'
             document.querySelector('#about h1 ').style.color = '#000'
+            document.querySelector('#about #about_btn_div #about_btn').style.backgroundColor = '#fff'
+            document.querySelector('#about #about_btn_div #about_btn').style.color = '#000'
+            document.querySelector('main #about #right #image1').style.borderColor='#ffab4b'
+            document.querySelector('main #about #right #image2').style.borderColor='#ffab4b'
+            document.querySelector('main #about #right #image3').style.borderColor='#ffab4b'
             document.querySelectorAll('#about p').forEach(p => { p.style.color = '#000' })
             document.querySelectorAll('#about p span').forEach(p => { p.style.color = '#ffab4b' })
             document.querySelector('#about #about_btn_div #about_btn').style.borderColor = '#ffab4b'
-            document.querySelector('#about #about_btn_div #about_btn').style.backgroundColor = '#fff'
-            document.querySelector('#about #about_btn_div #about_btn').style.color = '#000'
             document.querySelectorAll('#right #inder_right div').forEach(div => { div.style.borderColor = "#ffab4b" })
 
         }
@@ -318,6 +317,7 @@ const HomePage = () => {
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.borderColor = "#63b256"
             document.querySelector('.second-nav .navigation #remove_images_btn ').style.color = "#63b256"
             document.querySelector(' main header #header_banner #header_banner_left h1').style.color = "#63b256"
+            
 
 
 
@@ -342,6 +342,9 @@ const HomePage = () => {
             document.querySelector('#about #about_btn_div #about_btn').style.backgroundColor = '#fff'
             document.querySelector('#about #about_btn_div #about_btn').style.color = '#000'
             document.querySelectorAll('#right #inder_right div').forEach(div => { div.style.borderColor = "#63b256" })
+            document.querySelector('main #about #right #image1').style.borderColor='#63b256'
+            document.querySelector('main #about #right #image2').style.borderColor='#63b256'
+            document.querySelector('main #about #right #image3').style.borderColor='#63b256'
         }
         let ProgramSection = () => {
             document.querySelector("#program_container").style.backgroundColor = 'rgb(231 255 229)'

@@ -3,3 +3,18 @@ Main Color: #63b256 → Light Background:  rgb(231, 255, 229)
 Main Color: #ffab4b → Light Background: rgb(255, 241, 224)
 Main Color: #FE5D37 → Light Background: #faf5f4
 
+
+
+✅1. Kindly correct spellings, “Highflyers” and “Newsletter”
+
+2. The visual should be appealing, try incorporate colours of logo (not exact same but shades of the same palette to create a theme)
+
+3. Change Header Images, they’re not visible and not adding any value in overall look
+
+✅4. The enrollment buttons on the programs we offer are not working on my browser
+
+✅5. Remove “Why Choose Us” from Home page and shift it on About page after the about Us paragraph
+
+✅6. Select a suitable and attractive font
+
+7. Mistakes in form is also mentioned, kindly look into it

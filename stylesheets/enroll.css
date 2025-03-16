@@ -34,7 +34,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #fe5c37db;
+    background-color: #fe5c375e;
 }
 
 #header_banner img {
@@ -215,6 +215,7 @@ header {
 }
 #container-1 form  #checkbox_contaner_4{
     margin-top: 50px;
+    /* margin-left: 16px; */
 } 
 #container-1 form  #checkbox_contaner_4 h2{
     font-size: 17px;

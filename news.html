@@ -27,6 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: zoom-in;
   }
 
   .swiper-slide img {
@@ -60,7 +61,7 @@
         <div id="logo_image">
           <a href="./index.html"><img src="image/logoimage.png" alt="Website Logo"></a>
         </div>
-        <h1>House of Highflyess <br> International Virtual Academy</h1>
+        <h1>House of Highflyes <br> International Virtual Academy</h1>
       </div>
       <!-- navigation-1   -->
       <div class="navigation ">
@@ -88,59 +89,59 @@
       <!-- Left Flags -->
       <div class="flag-container left">
         <div class="flag-image" style="animation-delay: 0s">
-          <img src="image/flag_1.jpeg" alt="USA">
-        </div>
-        <div class="flag-image" style="animation-delay: 0.5s">
-          <img src="image/flag_2.jpeg" alt="Spain">
+          <img src="image/saudi_flag.png" alt="Saudi Arabia">
         </div>
         <div class="flag-image" style="animation-delay: 1s">
-          <img src="image/flag_3.jpeg" alt="France">
-        </div>
-        <div class="flag-image" style="animation-delay: 1.5s">
-          <img src="image/flag_4.jpeg" alt="Germany">
+          <img src="image/pakistan_flag.png" alt="Pakistan">
         </div>
         <div class="flag-image" style="animation-delay: 2s">
-          <img src="image/flag_5.jpeg" alt="Italy">
+          <img src="image/american_flag.png" alt="american">
+        </div>
+        <div class="flag-image" style="animation-delay: 2.5s">
+          <img src="image/oman_flag.png" alt="Oman">
+        </div>
+        <div class="flag-image" style="animation-delay: 3s">
+          <img src="image/qatar_flag.jpg" alt="Qatar">
         </div>
       </div>
-  
+
       <!-- Scrolling Text -->
       <div class="scroll-text">
-        <p>Admissions are now open at House of Highflyess International Virtual Academy! Apply now to secure your spot and start your journey with us.   &nbsp; &nbsp; Admissions are now open at House of Highflyess International Virtual Academy! Apply now to secure your spot and start your journey with us.   &nbsp; &nbsp; Admissions are now open at House of Highflyess International Virtual Academy! Apply now to secure your spot and start your journey with us. &nbsp; </p> 
+        <p>Admissions are now open at House of Highflyes International Virtual Academy! Apply now to secure your spot and start your journey with us. &nbsp; &nbsp; Admissions are now open at House of Highflyes International Virtual Academy! Apply now to secure your spot and start your journey with us. &nbsp; &nbsp; Admissions are now open at House of Highflyes International Virtual Academy! Apply now to secure your spot and start your journey with us. &nbsp; </p>
       </div>
-  
+
       <!-- Right Flags -->
       <div class="flag-container right">
         <div class="flag-image" style="animation-delay: 0s">
-          <img src="image/flag_1.jpeg" alt="USA">
-        </div>
-        <div class="flag-image" style="animation-delay: 0.5s">
-          <img src="image/flag_2.jpeg" alt="Spain">
+          <img src="image/saudi_flag.png" alt="Saudi Arabia">
         </div>
         <div class="flag-image" style="animation-delay: 1s">
-          <img src="image/flag_3.jpeg" alt="France">
-        </div>
-        <div class="flag-image" style="animation-delay: 1.5s">
-          <img src="image/flag_4.jpeg" alt="Germany">
+          <img src="image/pakistan_flag.png" alt="Pakistan">
         </div>
         <div class="flag-image" style="animation-delay: 2s">
-          <img src="image/flag_5.jpeg" alt="Italy">
+          <img src="image/american_flag.png" alt="american">
+        </div>
+        <div class="flag-image" style="animation-delay: 2.5s">
+          <img src="image/oman_flag.png" alt="Oman">
+        </div>
+        <div class="flag-image" style="animation-delay: 3s">
+          <img src="image/qatar_flag.jpg" alt="Qatar">
         </div>
       </div>
     </div>
     <section id="header_banner">
       <img src="./image/111111.jpg" alt="Header banner image-1">
       <span></span>
-      <h1>Newsletter of House of Highflyess International Virtual Academy</h1>
+      <h1>Newsletter of House of Highflyes International Virtual Academy</h1>
     </section>
   </header>
   <!-- Container -->
   <div id="container_1">
     <div id="left">
-      <img src="./image/news_page_1.jpg" alt="This is our  news paper number 1">
+      <img src="./image/news_page_1.jpg" alt="This is our  news letter number 1">
     </div>
     <div id="right">
-      <img src="./image/news_page_2.jpg" alt="This is our  news paper number 1">
+      <img src="./image/news_page_2.jpg" alt="This is our  news letter number 2">
     </div>
     <div class="display_box news_image_display_hidden">
         <i class="fa-solid fa-xmark slider_remove_btn"></i>
@@ -213,12 +214,52 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  });
+    on: {
+        touchMove: function () {
+            // Disable click events while swiping
+            document.querySelectorAll('.swiper-slide img').forEach(img => {
+                img.style.pointerEvents = "none";
+            });
+        },
+        touchEnd: function () {
+            // Re-enable click events after swiping stops
+            setTimeout(() => {
+                document.querySelectorAll('.swiper-slide img').forEach(img => {
+                    img.style.pointerEvents = "auto";
+                });
+            }, 300); // Small delay for smooth behavior
+        }
+    }
+});
+
+// Prevent Swiper from moving when clicking an image inside a slide
+document.querySelectorAll('.swiper-slide img').forEach(img => {
+    img.addEventListener('click', function (e) {
+        e.stopPropagation(); // Stops event from bubbling up to Swiper
+    });
+});
+
+
+document.querySelectorAll('.swiper-slide img').forEach(img => {
+    img.addEventListener('click', function (e) {
+        if (e.target.classList.contains('zoomed')) {
+            e.target.style.transform = "scale(1)"; // Zoom out
+            e.target.classList.remove('zoomed'); 
+        } else {
+            e.target.style.transform = "scale(2)"; // Zoom in
+            e.target.style.transformOrigin = `${e.offsetX}px ${e.offsetY}px`; // Zoom at click point
+            e.target.classList.add('zoomed');
+        }
+        e.target.style.transition = "transform 0.3s ease-in-out"; 
+    });
+});
+
 </script>
 
 

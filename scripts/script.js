@@ -19,14 +19,6 @@ ResponsiveNavBar()
 
 
 
-// Font_size
-
-// document.querySelectorAll('p').forEach(p => {
-//     p.style.fontFamily = `sans-serif`
-//     p.style.fontWeight = 400
-//     p.style.fontFamily = 'normal'
-// });
-
 
 
 const ImageRotationFunction = () => {
